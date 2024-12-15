@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { Box, Typography, Button } from '@mui/material';
 import { styled } from '@mui/system';
 import banner from "../../assets/banner.png"
-const BannerContainer = styled(Box)(({ theme }) => ({
+const BannerContainer = styled(Box)(({  }) => ({
   height: '400px',
   width: '100%',
   display: 'flex',

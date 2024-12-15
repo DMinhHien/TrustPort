@@ -1,10 +1,9 @@
-import React from 'react';
-import { Container, Typography, Grid, Card, CardMedia, CardContent, Box } from '@mui/material';
+
+import { Container, Typography, Grid, Card, CardMedia, Box } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import about1 from "../../assets/about1.png"
 import about2 from "../../assets/about2.png"
-import about3 from "../../assets/about3.png"
 const About = () => {
     return (
         <Container maxWidth="lg" sx={{ mt: 5, mb: 5 }}>

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Typography, Container, Grid, Button } from '@mui/material';
+
+import { Box, Typography, Container, Grid } from '@mui/material';
 
 const Information = () => {
   return (

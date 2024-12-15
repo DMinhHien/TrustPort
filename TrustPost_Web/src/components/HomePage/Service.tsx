@@ -40,7 +40,7 @@ const TabContainer = styled(Box)({
 });
 
 const Service = () => {
-  const [value, setValue] = React.useState(0);
+  const [value] = React.useState(0);
 
 //   const handleChange = (event, newValue) => {
 //     setValue(newValue);

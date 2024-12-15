@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Grid, Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import service1 from "../../assets/service1.png"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
-import service4 from "../../assets/service4.png"
+
 const cardsData = [
   {
     title: "EXPRESS",
@@ -29,7 +29,7 @@ const cardsData = [
 ];
 
 // Custom styling for the cards
-const CardContainer = styled(Card)(({ theme }) => ({
+const CardContainer = styled(Card)(({ }) => ({
   position: "relative",
   color: "#fff",
   borderRadius: "8px",
@@ -66,7 +66,7 @@ const CardOverlay = styled("div")(() => ({
   height: "100%",
 }));
 
-const AddButton = styled(Button)(({ theme }) => ({
+const AddButton = styled(Button)(({  }) => ({
   backgroundColor: "#007BFF",
   color: "#fff",
   alignSelf: "flex-start",
