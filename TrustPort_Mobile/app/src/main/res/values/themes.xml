@@ -3,7 +3,17 @@
     <style name="Base.Theme.TrustPort_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/silver</item>
     </style>
 
     <style name="Theme.TrustPort_Mobile" parent="Base.Theme.TrustPort_Mobile" />
+    <style name="SCREEN">
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
