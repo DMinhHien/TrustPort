@@ -1,0 +1,137 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Mã vận đơn -->
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456789"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Biểu tượng copy -->
+    <ImageView
+        android:id="@+id/iv_copy"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_copy"
+    android:contentDescription="Copy"
+    app:layout_constraintStart_toEndOf="@id/tv_order_id"
+    app:layout_constraintTop_toTopOf="@id/tv_order_id"
+    android:layout_marginStart="8dp" />
+
+    <!-- Trạng thái giao hàng -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giao thành công"
+        android:textColor="@color/white"
+        android:background="@drawable/status_background"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="4dp"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_order_id"
+    android:layout_marginTop="8dp" />
+
+    <!-- Dòng thông tin người gửi -->
+    <TextView
+        android:id="@+id/tv_sender_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gửi từ Dương Minh Hiền/ 082*****38"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Địa chỉ -->
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📍 128 Nguyễn Thị Định"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sender_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/tv_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📦 1x Chảo chống dính"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Giá tiền -->
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="💲 200.000 đ"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Nút gọi CSKH -->
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gọi CSKH"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        app:layout_constraintEnd_toStartOf="@id/btn_route" />
+
+    <!-- Nút Hành trình -->
+    <Button
+        android:id="@+id/btn_route"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hành trình"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/btn_call"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        app:layout_constraintEnd_toStartOf="@id/btn_more" />
+
+    <!-- Nút ... -->
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/btn_route"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

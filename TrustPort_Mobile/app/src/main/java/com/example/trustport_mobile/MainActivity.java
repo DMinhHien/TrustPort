@@ -2,6 +2,9 @@ package com.example.trustport_mobile;
 
 import android.os.Bundle;
 
+import com.example.trustport_mobile.ui.Fragment.FirstFragment;
+import com.example.trustport_mobile.ui.Fragment.SecondFragment;
+import com.example.trustport_mobile.ui.Fragment.ThirdFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
