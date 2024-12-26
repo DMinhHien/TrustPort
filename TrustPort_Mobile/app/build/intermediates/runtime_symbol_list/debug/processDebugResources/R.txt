@@ -1435,6 +1435,7 @@ int color cardview_dark_background 0x7f06002d
 int color cardview_light_background 0x7f06002e
 int color cardview_shadow_end_color 0x7f06002f
 int color cardview_shadow_start_color 0x7f060030
+int color colorPrimary 0x7f060315
 int color design_bottom_navigation_shadow_color 0x7f060031
 int color design_box_stroke_color 0x7f060032
 int color design_dark_default_color_background 0x7f060033
@@ -1481,6 +1482,7 @@ int color error_color_material_dark 0x7f06005b
 int color error_color_material_light 0x7f06005c
 int color foreground_material_dark 0x7f06005d
 int color foreground_material_light 0x7f06005e
+int color green 0x7f060316
 int color grey 0x7f06005f
 int color highlighted_text_material_dark 0x7f060060
 int color highlighted_text_material_light 0x7f060061
@@ -3120,6 +3122,7 @@ int drawable ic_search_black_24 0x7f0800b1
 int drawable icon_tinit_color 0x7f0800b2
 int drawable indeterminate_static 0x7f0800b3
 int drawable intro_photo_final 0x7f0800b4
+int drawable logo 0x7f080109
 int drawable m3_avd_hide_password 0x7f0800b5
 int drawable m3_avd_show_password 0x7f0800b6
 int drawable m3_bottom_sheet_drag_handle 0x7f0800b7
@@ -3424,6 +3427,7 @@ int id flFragment 0x7f0900d8
 int id flip 0x7f0900d9
 int id floating 0x7f0900da
 int id forever 0x7f0900db
+int id forgot_password 0x7f09023d
 int id fragment_container_view_tag 0x7f0900dc
 int id frost 0x7f0900dd
 int id fullscreen_header 0x7f0900de
@@ -3479,6 +3483,8 @@ int id linear 0x7f09010f
 int id listMode 0x7f090110
 int id list_item 0x7f090111
 int id locale 0x7f090112
+int id login_button 0x7f09023e
+int id logo 0x7f09023f
 int id ltr 0x7f090113
 int id m3_side_sheet 0x7f090114
 int id main 0x7f090115
@@ -3593,6 +3599,8 @@ int id parent 0x7f090181
 int id parentPanel 0x7f090182
 int id parentRelative 0x7f090183
 int id parent_matrix 0x7f090184
+int id password 0x7f090240
+int id password_input 0x7f090241
 int id password_toggle 0x7f090185
 int id path 0x7f090186
 int id pathRelative 0x7f090187
@@ -3653,6 +3661,7 @@ int id shortcut 0x7f0901bd
 int id showCustom 0x7f0901be
 int id showHome 0x7f0901bf
 int id showTitle 0x7f0901c0
+int id sign_up 0x7f090242
 int id sin 0x7f0901c1
 int id skipCollapsed 0x7f0901c2
 int id skipped 0x7f0901c3
@@ -3756,6 +3765,8 @@ int id uniform 0x7f090224
 int id unlabeled 0x7f090225
 int id up 0x7f090226
 int id useLogo 0x7f090227
+int id username 0x7f090243
+int id username_input 0x7f090244
 int id vertical 0x7f090228
 int id vertical_only 0x7f090229
 int id view 0x7f09022a
@@ -3892,6 +3903,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_login 0x7f0c0076
 int layout activity_main 0x7f0c001c
 int layout custom_dialog 0x7f0c001d
 int layout design_bottom_navigation_item 0x7f0c001e

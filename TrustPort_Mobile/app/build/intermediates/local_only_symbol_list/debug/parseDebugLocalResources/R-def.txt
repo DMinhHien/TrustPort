@@ -4,6 +4,8 @@ array date_filter_options
 array status_filter_options
 color black
 color blue
+color colorPrimary
+color green
 color grey
 color ic_launcher_background
 color light_gray
@@ -46,6 +48,7 @@ drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable icon_tinit_color
 drawable intro_photo_final
+drawable logo
 drawable profile_circle_background
 drawable radio_changetext
 drawable radio_food
@@ -74,6 +77,7 @@ id detail_Name
 id detail_Price
 id detail_Qty
 id flFragment
+id forgot_password
 id group
 id group_food
 id group_food_place
@@ -85,6 +89,8 @@ id iv_arrow
 id iv_copy
 id iv_icon
 id iv_profile_image
+id login_button
+id logo
 id main
 id mySaved_txt
 id mycart_txt
@@ -92,6 +98,8 @@ id name
 id nav_graph
 id order_list
 id orders
+id password
+id password_input
 id person
 id phone
 id progressLocation
@@ -100,6 +108,7 @@ id recyclerSaved
 id recyclerView
 id recyclerViewMonAn
 id searchView
+id sign_up
 id spinner_date
 id spinner_group
 id spinner_status
@@ -115,8 +124,11 @@ id tv_sender_info
 id tv_status
 id tv_title
 id txtTotal
+id username
+id username_input
 id view
 id view2
+layout activity_login
 layout activity_main
 layout fragment_cart
 layout fragment_first
