@@ -3303,6 +3303,8 @@ int id autoComplete 0x7f09005c
 int id autoCompleteToEnd 0x7f09005d
 int id autoCompleteToStart 0x7f09005e
 int id axisRelative 0x7f09005f
+int id back_to_login 0x7f090245
+int id background_image 0x7f090246
 int id barrier 0x7f090060
 int id baseline 0x7f090061
 int id beginOnFirstDraw 0x7f090062
@@ -3347,6 +3349,8 @@ int id closest 0x7f090088
 int id collapseActionView 0x7f090089
 int id compress 0x7f09008a
 int id confirm_button 0x7f09008b
+int id confirm_password 0x7f090247
+int id confirm_password_input 0x7f090248
 int id constraint 0x7f09008c
 int id container 0x7f09008d
 int id content 0x7f09008e
@@ -3403,6 +3407,8 @@ int id edge 0x7f0900c0
 int id edit_query 0x7f0900c1
 int id edit_text_id 0x7f0900c2
 int id elastic 0x7f0900c3
+int id email 0x7f090249
+int id email_input 0x7f09024a
 int id embed 0x7f0900c4
 int id end 0x7f0900c5
 int id endToStart 0x7f0900c6
@@ -3662,6 +3668,7 @@ int id showCustom 0x7f0901be
 int id showHome 0x7f0901bf
 int id showTitle 0x7f0901c0
 int id sign_up 0x7f090242
+int id signup_button 0x7f09024b
 int id sin 0x7f0901c1
 int id skipCollapsed 0x7f0901c2
 int id skipped 0x7f0901c3
@@ -3905,6 +3912,7 @@ int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c0076
 int layout activity_main 0x7f0c001c
+int layout activity_signup 0x7f0c0077
 int layout custom_dialog 0x7f0c001d
 int layout design_bottom_navigation_item 0x7f0c001e
 int layout design_bottom_sheet_dialog 0x7f0c001f

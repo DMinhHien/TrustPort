@@ -64,6 +64,8 @@ id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
 id address
+id back_to_login
+id background_image
 id bottomNavigationView
 id btn_back
 id btn_call
@@ -71,11 +73,15 @@ id btn_edit_profile
 id btn_more
 id btn_route
 id button_newOrder
+id confirm_password
+id confirm_password_input
 id desc
 id detail_Image
 id detail_Name
 id detail_Price
 id detail_Qty
+id email
+id email_input
 id flFragment
 id forgot_password
 id group
@@ -109,6 +115,7 @@ id recyclerView
 id recyclerViewMonAn
 id searchView
 id sign_up
+id signup_button
 id spinner_date
 id spinner_group
 id spinner_status
@@ -130,6 +137,7 @@ id view
 id view2
 layout activity_login
 layout activity_main
+layout activity_signup
 layout fragment_cart
 layout fragment_first
 layout fragment_location

@@ -24,6 +24,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView backgroundImage;
+
+  @NonNull
   public final TextView forgotPassword;
 
   @NonNull
@@ -47,11 +50,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout usernameInput;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView forgotPassword,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageView backgroundImage, @NonNull TextView forgotPassword,
       @NonNull Button loginButton, @NonNull ImageView logo, @NonNull TextInputEditText password,
       @NonNull TextInputLayout passwordInput, @NonNull TextView signUp,
       @NonNull TextInputEditText username, @NonNull TextInputLayout usernameInput) {
     this.rootView = rootView;
+    this.backgroundImage = backgroundImage;
     this.forgotPassword = forgotPassword;
     this.loginButton = loginButton;
     this.logo = logo;
@@ -89,6 +94,12 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.background_image;
+      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundImage == null) {
+        break missingId;
+      }
+
       id = R.id.forgot_password;
       TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
       if (forgotPassword == null) {
@@ -137,8 +148,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, forgotPassword, loginButton,
-          logo, password, passwordInput, signUp, username, usernameInput);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, backgroundImage, forgotPassword,
+          loginButton, logo, password, passwordInput, signUp, username, usernameInput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

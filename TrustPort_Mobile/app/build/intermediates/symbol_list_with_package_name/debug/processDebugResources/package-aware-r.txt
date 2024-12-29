@@ -3304,6 +3304,8 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id back_to_login
+id background_image
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3348,6 +3350,8 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id confirm_password
+id confirm_password_input
 id constraint
 id container
 id content
@@ -3404,6 +3408,8 @@ id edge
 id edit_query
 id edit_text_id
 id elastic
+id email
+id email_input
 id embed
 id end
 id endToStart
@@ -3663,6 +3669,7 @@ id showCustom
 id showHome
 id showTitle
 id sign_up
+id signup_button
 id sin
 id skipCollapsed
 id skipped
@@ -3906,6 +3913,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_signup
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
