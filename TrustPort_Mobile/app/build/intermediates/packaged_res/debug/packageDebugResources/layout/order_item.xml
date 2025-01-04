@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:background="@color/white">
@@ -101,10 +102,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Gọi CSKH"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/gradient_button"
         android:textColor="@color/black"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="12dp"
+        app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_price"
         app:layout_constraintEnd_toStartOf="@id/btn_route" />
@@ -115,9 +116,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Hành trình"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/gradient_button"
         android:textColor="@color/black"
         android:layout_marginEnd="8dp"
+        app:backgroundTint="@null"
         app:layout_constraintStart_toEndOf="@id/btn_call"
         app:layout_constraintTop_toBottomOf="@id/tv_price"
         app:layout_constraintEnd_toStartOf="@id/btn_more" />
@@ -128,8 +130,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="..."
-        android:backgroundTint="@color/white"
+        android:background="@drawable/gradient_button"
         android:textColor="@color/black"
+        app:backgroundTint="@null"
         app:layout_constraintStart_toEndOf="@id/btn_route"
         app:layout_constraintTop_toBottomOf="@id/tv_price"
         app:layout_constraintEnd_toEndOf="parent" />
