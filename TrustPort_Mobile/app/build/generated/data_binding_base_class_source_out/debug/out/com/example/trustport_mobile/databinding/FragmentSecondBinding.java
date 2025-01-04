@@ -4,6 +4,7 @@ package com.example.trustport_mobile.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -12,7 +13,6 @@ import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.trustport_mobile.R;
@@ -23,6 +23,9 @@ import java.lang.String;
 public final class FragmentSecondBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final FrameLayout childFragmentContainer;
 
   @NonNull
   public final RadioButton groupFood;
@@ -37,9 +40,6 @@ public final class FragmentSecondBinding implements ViewBinding {
   public final Toolbar groupToolbar;
 
   @NonNull
-  public final RecyclerView orderList;
-
-  @NonNull
   public final Spinner spinnerDate;
 
   @NonNull
@@ -48,16 +48,17 @@ public final class FragmentSecondBinding implements ViewBinding {
   @NonNull
   public final Spinner spinnerStatus;
 
-  private FragmentSecondBinding(@NonNull ConstraintLayout rootView, @NonNull RadioButton groupFood,
+  private FragmentSecondBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FrameLayout childFragmentContainer, @NonNull RadioButton groupFood,
       @NonNull RadioGroup groupFoodPlace, @NonNull RadioButton groupPlace,
-      @NonNull Toolbar groupToolbar, @NonNull RecyclerView orderList, @NonNull Spinner spinnerDate,
+      @NonNull Toolbar groupToolbar, @NonNull Spinner spinnerDate,
       @NonNull LinearLayout spinnerGroup, @NonNull Spinner spinnerStatus) {
     this.rootView = rootView;
+    this.childFragmentContainer = childFragmentContainer;
     this.groupFood = groupFood;
     this.groupFoodPlace = groupFoodPlace;
     this.groupPlace = groupPlace;
     this.groupToolbar = groupToolbar;
-    this.orderList = orderList;
     this.spinnerDate = spinnerDate;
     this.spinnerGroup = spinnerGroup;
     this.spinnerStatus = spinnerStatus;
@@ -90,6 +91,12 @@ public final class FragmentSecondBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.child_fragment_container;
+      FrameLayout childFragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (childFragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.group_food;
       RadioButton groupFood = ViewBindings.findChildViewById(rootView, id);
       if (groupFood == null) {
@@ -114,12 +121,6 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.order_list;
-      RecyclerView orderList = ViewBindings.findChildViewById(rootView, id);
-      if (orderList == null) {
-        break missingId;
-      }
-
       id = R.id.spinner_date;
       Spinner spinnerDate = ViewBindings.findChildViewById(rootView, id);
       if (spinnerDate == null) {
@@ -138,8 +139,9 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSecondBinding((ConstraintLayout) rootView, groupFood, groupFoodPlace,
-          groupPlace, groupToolbar, orderList, spinnerDate, spinnerGroup, spinnerStatus);
+      return new FragmentSecondBinding((ConstraintLayout) rootView, childFragmentContainer,
+          groupFood, groupFoodPlace, groupPlace, groupToolbar, spinnerDate, spinnerGroup,
+          spinnerStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
