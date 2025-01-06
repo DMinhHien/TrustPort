@@ -213,12 +213,33 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <TextView
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Giao hàng"
-                        android:textSize="16sp"
-                        android:textColor="#FF9800" />
+                        android:orientation="horizontal"
+                        android:gravity="space-between">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giao hàng"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="#FF9800" />
+
+                        <!-- Thay đổi địa chỉ giao hàng -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thay đổi địa chỉ giao hàng"
+                            android:textSize="14sp"
+                            android:textColor="#1E88E5"
+                            android:paddingLeft="16dp"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </LinearLayout>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
