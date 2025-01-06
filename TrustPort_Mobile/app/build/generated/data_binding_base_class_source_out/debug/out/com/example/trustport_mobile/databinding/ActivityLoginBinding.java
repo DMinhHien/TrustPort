@@ -24,10 +24,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView backgroundImage;
+  public final TextView forgotPassword;
 
   @NonNull
-  public final TextView forgotPassword;
+  public final TextView headerSection;
 
   @NonNull
   public final Button loginButton;
@@ -50,14 +50,14 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextInputLayout usernameInput;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView backgroundImage, @NonNull TextView forgotPassword,
-      @NonNull Button loginButton, @NonNull ImageView logo, @NonNull TextInputEditText password,
-      @NonNull TextInputLayout passwordInput, @NonNull TextView signUp,
-      @NonNull TextInputEditText username, @NonNull TextInputLayout usernameInput) {
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView forgotPassword,
+      @NonNull TextView headerSection, @NonNull Button loginButton, @NonNull ImageView logo,
+      @NonNull TextInputEditText password, @NonNull TextInputLayout passwordInput,
+      @NonNull TextView signUp, @NonNull TextInputEditText username,
+      @NonNull TextInputLayout usernameInput) {
     this.rootView = rootView;
-    this.backgroundImage = backgroundImage;
     this.forgotPassword = forgotPassword;
+    this.headerSection = headerSection;
     this.loginButton = loginButton;
     this.logo = logo;
     this.password = password;
@@ -94,15 +94,15 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.background_image;
-      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
-      if (backgroundImage == null) {
-        break missingId;
-      }
-
       id = R.id.forgot_password;
       TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
       if (forgotPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.header_section;
+      TextView headerSection = ViewBindings.findChildViewById(rootView, id);
+      if (headerSection == null) {
         break missingId;
       }
 
@@ -148,7 +148,7 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, backgroundImage, forgotPassword,
+      return new ActivityLoginBinding((ConstraintLayout) rootView, forgotPassword, headerSection,
           loginButton, logo, password, passwordInput, signUp, username, usernameInput);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -27,9 +27,6 @@ public final class ActivitySignupBinding implements ViewBinding {
   public final TextView backToLogin;
 
   @NonNull
-  public final ImageView backgroundImage;
-
-  @NonNull
   public final TextInputEditText confirmPassword;
 
   @NonNull
@@ -40,6 +37,9 @@ public final class ActivitySignupBinding implements ViewBinding {
 
   @NonNull
   public final TextInputLayout emailInput;
+
+  @NonNull
+  public final TextView headerSection;
 
   @NonNull
   public final ImageView logo;
@@ -60,19 +60,18 @@ public final class ActivitySignupBinding implements ViewBinding {
   public final TextInputLayout usernameInput;
 
   private ActivitySignupBinding(@NonNull ConstraintLayout rootView, @NonNull TextView backToLogin,
-      @NonNull ImageView backgroundImage, @NonNull TextInputEditText confirmPassword,
-      @NonNull TextInputLayout confirmPasswordInput, @NonNull TextInputEditText email,
-      @NonNull TextInputLayout emailInput, @NonNull ImageView logo,
-      @NonNull TextInputEditText password, @NonNull TextInputLayout passwordInput,
-      @NonNull Button signupButton, @NonNull TextInputEditText username,
-      @NonNull TextInputLayout usernameInput) {
+      @NonNull TextInputEditText confirmPassword, @NonNull TextInputLayout confirmPasswordInput,
+      @NonNull TextInputEditText email, @NonNull TextInputLayout emailInput,
+      @NonNull TextView headerSection, @NonNull ImageView logo, @NonNull TextInputEditText password,
+      @NonNull TextInputLayout passwordInput, @NonNull Button signupButton,
+      @NonNull TextInputEditText username, @NonNull TextInputLayout usernameInput) {
     this.rootView = rootView;
     this.backToLogin = backToLogin;
-    this.backgroundImage = backgroundImage;
     this.confirmPassword = confirmPassword;
     this.confirmPasswordInput = confirmPasswordInput;
     this.email = email;
     this.emailInput = emailInput;
+    this.headerSection = headerSection;
     this.logo = logo;
     this.password = password;
     this.passwordInput = passwordInput;
@@ -114,12 +113,6 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.background_image;
-      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
-      if (backgroundImage == null) {
-        break missingId;
-      }
-
       id = R.id.confirm_password;
       TextInputEditText confirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmPassword == null) {
@@ -141,6 +134,12 @@ public final class ActivitySignupBinding implements ViewBinding {
       id = R.id.email_input;
       TextInputLayout emailInput = ViewBindings.findChildViewById(rootView, id);
       if (emailInput == null) {
+        break missingId;
+      }
+
+      id = R.id.header_section;
+      TextView headerSection = ViewBindings.findChildViewById(rootView, id);
+      if (headerSection == null) {
         break missingId;
       }
 
@@ -180,8 +179,8 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignupBinding((ConstraintLayout) rootView, backToLogin, backgroundImage,
-          confirmPassword, confirmPasswordInput, email, emailInput, logo, password, passwordInput,
+      return new ActivitySignupBinding((ConstraintLayout) rootView, backToLogin, confirmPassword,
+          confirmPasswordInput, email, emailInput, headerSection, logo, password, passwordInput,
           signupButton, username, usernameInput);
     }
     String missingId = rootView.getResources().getResourceName(id);

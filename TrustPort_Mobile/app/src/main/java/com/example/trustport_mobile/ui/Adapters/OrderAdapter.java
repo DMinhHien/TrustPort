@@ -20,10 +20,7 @@ import java.util.List;
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHolder> {
 
     private List<Order> orderList;
-    private Context context;
-
     public OrderAdapter(List<Order> orderList) {
-        this.context = context;
         this.orderList = orderList;
     }
 
@@ -45,7 +42,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         holder.price.setText(order.getPrice());
 
         holder.detail_button.setOnClickListener(v -> {
-            Intent intent = new Intent(context, ChitietdonhangActivity.class);
+            Intent intent = new Intent(holder.itemView.getContext(), ChitietdonhangActivity.class);
+            holder.itemView.getContext().startActivity(intent);
         });
     }
 

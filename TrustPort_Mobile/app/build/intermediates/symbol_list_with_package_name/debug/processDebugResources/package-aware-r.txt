@@ -1487,7 +1487,6 @@ color green
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color ic_launcher_background
 color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -3113,6 +3112,7 @@ drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_copy
+drawable ic_delivery
 drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3127,6 +3127,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable ic_search_black_24
+drawable ic_success
 drawable icon_tinit_color
 drawable indeterminate_static
 drawable intro_photo_final
@@ -3311,7 +3312,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
 id back_to_login
-id background_image
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3325,6 +3325,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnXacNhan
 id btn_back
 id btn_call
 id btn_change_image
@@ -3414,6 +3415,10 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextDiaChiCuThe
+id editTextDuongThonXom
+id editTextHoTen
+id editTextSoDienThoai
 id edit_profile_image
 id edit_query
 id edit_text_id
@@ -3462,6 +3467,7 @@ id group_place
 id group_toolbar
 id grouping
 id groups
+id header_section
 id header_title
 id hide_ime_id
 id hideable
@@ -3472,6 +3478,7 @@ id horizontal
 id horizontal_only
 id icon
 id icon_group
+id id
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3692,6 +3699,9 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerPhuongXa
+id spinnerQuanHuyen
+id spinnerTinhThanh
 id spinner_date
 id spinner_group
 id spinner_status
@@ -3741,6 +3751,8 @@ id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id text_order
+id text_title
+id text_title_2
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3754,6 +3766,7 @@ id title_template
 id toggle
 id toolbar
 id toolbarFirstFragment
+id toolbarOrderSearch
 id top
 id topPanel
 id touch_outside
@@ -3919,9 +3932,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chitiethanghoa
 layout activity_login
 layout activity_main
+layout activity_search_order
 layout activity_signup
+layout activity_suadiachinhanhang
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
