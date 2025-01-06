@@ -35,6 +35,10 @@
             android:name=".ui.Activity.ChitietdonhangActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ui.Activity.SuadiachinhanhangActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

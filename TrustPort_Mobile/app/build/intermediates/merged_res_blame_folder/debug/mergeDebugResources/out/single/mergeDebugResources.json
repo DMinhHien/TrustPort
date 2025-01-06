@@ -272,10 +272,6 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\container_image.png"
     },
     {
-        "merged": "com.example.trustport_mobile.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_activity_suadiachinhanhang.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_suadiachinhanhang.xml"
     },
@@ -322,5 +318,9 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_baseline_bookmark_24_black.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\baseline_bookmark_24_black.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-debug-4:/layout_activity_chitiethanghoa.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_chitiethanghoa.xml"
     }
 ]

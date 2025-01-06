@@ -138,6 +138,7 @@ id spinnerTinhThanh
 id spinner_date
 id spinner_group
 id spinner_status
+id text_change_address
 id text_order
 id text_title
 id text_title_2

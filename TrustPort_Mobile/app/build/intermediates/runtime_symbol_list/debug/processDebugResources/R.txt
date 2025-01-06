@@ -3746,6 +3746,7 @@ int id textSpacerNoButtons 0x7f09020f
 int id textSpacerNoTitle 0x7f090210
 int id textStart 0x7f090211
 int id textTop 0x7f090212
+int id text_change_address 0x7f090259
 int id text_input_end_icon 0x7f090213
 int id text_input_error_icon 0x7f090214
 int id text_input_start_icon 0x7f090215

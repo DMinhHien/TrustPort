@@ -230,6 +230,7 @@
 
                         <!-- Thay đổi địa chỉ giao hàng -->
                         <TextView
+                            android:id="@+id/text_change_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Thay đổi địa chỉ giao hàng"

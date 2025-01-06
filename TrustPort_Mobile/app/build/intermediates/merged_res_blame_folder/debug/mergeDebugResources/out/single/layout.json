@@ -52,12 +52,12 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_location.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_second_child.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second_child.xml"
-    },
-    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_chitiethanghoa.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_chitiethanghoa.xml"
+    },
+    {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_second_child.xml",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second_child.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_cart.xml",

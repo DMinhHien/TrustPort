@@ -1,6 +1,7 @@
 package com.example.trustport_mobile.ui.Activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,19 +34,21 @@ public class SuadiachinhanhangActivity extends AppCompatActivity {
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("TAG", "Nút xác nhận đã được nhấn");
                 // Lấy dữ liệu từ các trường
-                String hoTen = editTextHoTen.getText().toString().trim();
-                String soDienThoai = editTextSoDienThoai.getText().toString().trim();
-                String diaChiCuThe = editTextDiaChiCuThe.getText().toString().trim();
-                String duongThonXom = editTextDuongThonXom.getText().toString().trim();
-                String tinhThanh = spinnerTinhThanh.getSelectedItem().toString();
-                String quanHuyen = spinnerQuanHuyen.getSelectedItem().toString();
-                String phuongXa = spinnerPhuongXa.getSelectedItem().toString();
+//                String hoTen = editTextHoTen.getText().toString().trim();
+//                String soDienThoai = editTextSoDienThoai.getText().toString().trim();
+//                String diaChiCuThe = editTextDiaChiCuThe.getText().toString().trim();
+//                String duongThonXom = editTextDuongThonXom.getText().toString().trim();
+//                String tinhThanh = spinnerTinhThanh.getSelectedItem().toString();
+//                String quanHuyen = spinnerQuanHuyen.getSelectedItem().toString();
+//                String phuongXa = spinnerPhuongXa.getSelectedItem().toString();
 
                 // Hiển thị thông báo
                 Toast.makeText(SuadiachinhanhangActivity.this, "Đã lưu địa chỉ!", Toast.LENGTH_SHORT).show();
 
                 // Thực hiện thêm logic nếu cần, ví dụ: Lưu vào cơ sở dữ liệu hoặc gửi lên server
+                finish();
             }
         });
     }
