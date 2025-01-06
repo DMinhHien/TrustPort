@@ -48,6 +48,7 @@
 
             <!-- Họ và Tên -->
             <EditText
+                android:id="@+id/editTextHoTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Họ tên"
@@ -57,6 +58,7 @@
 
             <!-- Số điện thoại -->
             <EditText
+                android:id="@+id/editTextSoDienThoai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Số điện thoại"
@@ -67,6 +69,7 @@
 
             <!-- Địa chỉ -->
             <EditText
+                android:id="@+id/editTextDiaChiCuThe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Địa chỉ"
@@ -84,6 +87,7 @@
                 android:paddingTop="12dp"
                 android:paddingBottom="4dp" />
             <Spinner
+                android:id="@+id/spinnerTinhThanh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:spinnerMode="dropdown" />
@@ -98,6 +102,7 @@
                 android:paddingTop="12dp"
                 android:paddingBottom="4dp" />
             <Spinner
+                android:id="@+id/spinnerQuanHuyen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:spinnerMode="dropdown" />
@@ -112,6 +117,7 @@
                 android:paddingTop="12dp"
                 android:paddingBottom="4dp" />
             <Spinner
+                android:id="@+id/spinnerPhuongXa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:spinnerMode="dropdown" />
@@ -126,6 +132,7 @@
                 android:paddingTop="12dp"
                 android:paddingBottom="4dp" />
             <EditText
+                android:id="@+id/editTextDuongThonXom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nhập đường, thôn, xóm"
@@ -136,6 +143,7 @@
 
         <!-- Confirm Button -->
         <Button
+            android:id="@+id/btnXacNhan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Xác nhận"

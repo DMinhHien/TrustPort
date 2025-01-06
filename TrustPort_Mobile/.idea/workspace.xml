@@ -108,7 +108,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a26a811a-0405-4f66-925a-977f537cee3e" name="Changes" comment="update second and third fragment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chitiethanghoa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chitiethanghoa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_suadiachinhanhang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_suadiachinhanhang.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,8 +166,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
