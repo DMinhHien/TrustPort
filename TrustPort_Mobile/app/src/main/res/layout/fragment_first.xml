@@ -1,257 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.Toolbar
-
-        android:id="@+id/toolbarFirstFragment"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.appcompat.widget.Toolbar>
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        style="@style/TEXT"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search here"
-        android:searchIcon="@android:drawable/ic_menu_search"
-        app:layout_constraintTop_toTopOf="parent"
-        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="84dp"
-        android:id="@+id/group"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarFirstFragment"
-        android:background="@color/white"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <!-- Item 1 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarFirstFragment"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/blue">
+
+            <!-- Tùy chọn thêm vào Toolbar nếu cần, ví dụ: Logo, Menu -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Search View nằm trên Toolbar -->
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/TEXT"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search here"
+                    android:searchIcon="@android:drawable/ic_menu_search"
+                    android:layout_gravity="top" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!-- Group of Items -->
         <LinearLayout
-            android:id="@+id/btnTraCuu"
-            android:layout_width="0dp"
+            android:id="@+id/group"
+            android:layout_width="match_parent"
             android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
 
-            <!-- Vòng tròn nền -->
-                <!-- Icon -->
+            <!-- Item 1 -->
+            <LinearLayout
+                android:id="@+id/btnTraCuu"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:layout_gravity="center"
                     android:src="@drawable/box_search"
                     android:contentDescription="Latest Icon" />
-            <!-- Text -->
-            <TextView
-                android:layout_width="54dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Tra cứu đơn hàng"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="Tra cứu đơn hàng"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-
-        <!-- Item 2 -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
+                android:orientation="vertical">
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:layout_gravity="center"
                     android:src="@drawable/baseline_house_24"
                     android:contentDescription="Category Icon" />
-
-
-            <TextView
-                android:layout_width="44dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:layout_gravity="center"
-                android:text="Tra cứu bưu cục"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-
-        <!-- Item 3 -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="34dp"
-                android:layout_height="34dp"
-                android:src="@drawable/baseline_menu_book_24"
-                android:layout_gravity="center"
-                android:contentDescription="HCM Icon" />
-            <TextView
-                android:layout_width="64dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:gravity="center"
-                android:text="Hướng dẫn sử dụng"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-        <!-- Item 4 -->
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="84dp"
-        android:id="@+id/group2"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/group"
-        android:background="@color/white"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center"
-                android:background="@drawable/background_cycle_grey">
-
-                <ImageView
-                    android:layout_width="31dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="HCM Icon"
-                    android:src="@drawable/product_icon" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:layout_marginTop="4dp"
-                android:text="Tạo đơn hàng"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-        <!-- Item 5 -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center">
-
-                <ImageView
-                    android:layout_width="34dp"
+                <TextView
+                    android:layout_width="44dp"
                     android:layout_height="34dp"
                     android:layout_marginTop="4dp"
-                    android:src="@drawable/baseline_saved_search_24"
                     android:layout_gravity="center"
-                    android:contentDescription="HCM Icon" />
-            </FrameLayout>
+                    android:text="Tra cứu bưu cục"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="44dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="4dp"
-                android:layout_gravity="center"
-                android:text="Tra tính ước phí"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="84dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center"
-                android:background="@drawable/background_cycle_grey">
-
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
-                    android:src="@drawable/baseline_more_horiz_24"
+                    android:src="@drawable/baseline_menu_book_24"
                     android:layout_gravity="center"
                     android:contentDescription="HCM Icon" />
-            </FrameLayout>
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Hướng dẫn sử dụng"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_cycle_grey">
+                    <ImageView
+                        android:layout_width="31dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="HCM Icon"
+                        android:src="@drawable/product_icon" />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Tạo đơn hàng"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!-- Item 5 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_cycle_grey">
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/baseline_more_horiz_24"
+                        android:layout_gravity="center"
+                        android:contentDescription="HCM Icon" />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="4dp"
+                    android:text="More"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Banner Section -->
+        <FrameLayout
+            android:id="@+id/bannerFrame"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="90dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/container_image"
+                android:contentDescription="Main Image" />
+            <View
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#25C683" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="An toàn tuyệt đối"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:fontFamily="sans-serif-medium" />
+        </FrameLayout>
+
+        <!-- Footer Section -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#25C683">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:layout_marginTop="4dp"
-                android:text="More"
-                android:textSize="12sp"
-                android:textColor="@color/black" />
+                android:layout_height="wrap_content"
+                android:text="About TrustPost"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect with us"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/facebook_icon"
+                        android:contentDescription="Facebook"
+                        android:layout_marginEnd="12dp" />
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/tiktok_icon"
+                        android:contentDescription="Tiktok"
+                        android:layout_marginEnd="12dp" />
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/zalo_icon"
+                        android:contentDescription="Zalo"
+                        android:layout_marginEnd="12dp" />
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/youtube_icon"
+                        android:contentDescription="YouTube" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotline"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1800-1234"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="90dp"
-        app:layout_constraintTop_toBottomOf="@+id/group2">
-
-        <!-- ImageView -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/container_image"
-            android:contentDescription="Main Image" />
-
-        <!-- Hình chữ nhật che nửa bên trái -->
-        <View
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:background="#25C683" /> <!-- Màu đen trong suốt (ARGB) -->
-
-        <!-- Text hiển thị -->
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="16dp"
-            android:text="An toàn tuyệt đối"
-            android:textColor="@color/white"
-            android:textSize="34sp"
-            android:fontFamily="sans-serif-medium" />
-    </FrameLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

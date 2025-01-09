@@ -46,6 +46,7 @@ drawable baseline_settings_applications_24
 drawable box_search
 drawable container_image
 drawable custom_radio
+drawable facebook_icon
 drawable gradient_button
 drawable ic_arrow_right
 drawable ic_back
@@ -75,7 +76,10 @@ drawable rounded_circle
 drawable searchbar_background
 drawable spinner_background
 drawable status_background
+drawable tiktok_icon
 drawable user_black
+drawable youtube_icon
+drawable zalo_icon
 id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
@@ -83,6 +87,7 @@ id action_SecondFragment_to_FirstFragment
 id action_settings
 id backButton
 id back_to_login
+id bannerFrame
 id bottomNavigationView
 id btnBack
 id btnContinue
@@ -115,6 +120,7 @@ id edtInput
 id email
 id email_input
 id flFragment
+id footer
 id forgot_password
 id group
 id group_food
