@@ -51,6 +51,10 @@
             android:name=".ui.Activity.ForgotPassActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ui.Activity.EditUserActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

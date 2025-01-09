@@ -40,10 +40,6 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_orders_foreground.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-debug-4:/layout_activity_taodonhang.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_taodonhang.xml"
-    },
-    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_fragment_notification.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_notification.xml"
     },
@@ -166,6 +162,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\navigation_nav_graph.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-debug-4:/layout_edit_user.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/edit_user.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_ic_arrow_right.xml.flat",
@@ -322,6 +322,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_logo.jpg.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\logo.jpg"
+    },
+    {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_ic_logout.jpeg.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_logout.jpeg"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",

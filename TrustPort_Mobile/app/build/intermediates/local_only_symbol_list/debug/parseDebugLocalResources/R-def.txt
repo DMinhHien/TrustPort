@@ -55,6 +55,7 @@ drawable ic_forgot_password
 drawable ic_home_foreground
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable ic_success
@@ -89,6 +90,7 @@ id btn_back
 id btn_call
 id btn_change_image
 id btn_edit_profile
+id btn_edit_profile_confirm
 id btn_more
 id btn_route
 id button_newOrder
@@ -132,6 +134,7 @@ id iv_icon
 id iv_profile_image
 id login_button
 id logo
+id logout_layout
 id main
 id mySaved_txt
 id mycart_txt

@@ -3121,6 +3121,7 @@ drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3341,6 +3342,7 @@ id btn_back
 id btn_call
 id btn_change_image
 id btn_edit_profile
+id btn_edit_profile_confirm
 id btn_more
 id btn_route
 id buttonPanel
@@ -3526,6 +3528,7 @@ id list_item
 id locale
 id login_button
 id logo
+id logout_layout
 id ltr
 id m3_side_sheet
 id main

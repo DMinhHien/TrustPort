@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,16 +30,21 @@ public final class FragmentThirdBinding implements ViewBinding {
   public final ImageView ivProfileImage;
 
   @NonNull
+  public final LinearLayout logoutLayout;
+
+  @NonNull
   public final Toolbar toolbar;
 
   @NonNull
   public final TextView tvTitle;
 
   private FragmentThirdBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnEditProfile,
-      @NonNull ImageView ivProfileImage, @NonNull Toolbar toolbar, @NonNull TextView tvTitle) {
+      @NonNull ImageView ivProfileImage, @NonNull LinearLayout logoutLayout,
+      @NonNull Toolbar toolbar, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnEditProfile = btnEditProfile;
     this.ivProfileImage = ivProfileImage;
+    this.logoutLayout = logoutLayout;
     this.toolbar = toolbar;
     this.tvTitle = tvTitle;
   }
@@ -82,6 +88,12 @@ public final class FragmentThirdBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.logout_layout;
+      LinearLayout logoutLayout = ViewBindings.findChildViewById(rootView, id);
+      if (logoutLayout == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -95,7 +107,7 @@ public final class FragmentThirdBinding implements ViewBinding {
       }
 
       return new FragmentThirdBinding((ConstraintLayout) rootView, btnEditProfile, ivProfileImage,
-          toolbar, tvTitle);
+          logoutLayout, toolbar, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

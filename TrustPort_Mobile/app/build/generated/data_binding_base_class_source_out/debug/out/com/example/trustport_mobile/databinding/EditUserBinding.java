@@ -30,6 +30,9 @@ public final class EditUserBinding implements ViewBinding {
   public final Button btnChangeImage;
 
   @NonNull
+  public final Button btnEditProfileConfirm;
+
+  @NonNull
   public final ImageView editProfileImage;
 
   @NonNull
@@ -54,13 +57,14 @@ public final class EditUserBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private EditUserBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnBack,
-      @NonNull Button btnChangeImage, @NonNull ImageView editProfileImage,
-      @NonNull Toolbar editToolbar, @NonNull TextView email, @NonNull LinearLayout info,
-      @NonNull TextView name, @NonNull TextView password, @NonNull TextView phone,
-      @NonNull TextView tvTitle) {
+      @NonNull Button btnChangeImage, @NonNull Button btnEditProfileConfirm,
+      @NonNull ImageView editProfileImage, @NonNull Toolbar editToolbar, @NonNull TextView email,
+      @NonNull LinearLayout info, @NonNull TextView name, @NonNull TextView password,
+      @NonNull TextView phone, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnChangeImage = btnChangeImage;
+    this.btnEditProfileConfirm = btnEditProfileConfirm;
     this.editProfileImage = editProfileImage;
     this.editToolbar = editToolbar;
     this.email = email;
@@ -107,6 +111,12 @@ public final class EditUserBinding implements ViewBinding {
       id = R.id.btn_change_image;
       Button btnChangeImage = ViewBindings.findChildViewById(rootView, id);
       if (btnChangeImage == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_edit_profile_confirm;
+      Button btnEditProfileConfirm = ViewBindings.findChildViewById(rootView, id);
+      if (btnEditProfileConfirm == null) {
         break missingId;
       }
 
@@ -159,7 +169,8 @@ public final class EditUserBinding implements ViewBinding {
       }
 
       return new EditUserBinding((ConstraintLayout) rootView, btnBack, btnChangeImage,
-          editProfileImage, editToolbar, email, info, name, password, phone, tvTitle);
+          btnEditProfileConfirm, editProfileImage, editToolbar, email, info, name, password, phone,
+          tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

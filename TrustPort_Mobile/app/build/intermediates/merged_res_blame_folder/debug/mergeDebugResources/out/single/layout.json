@@ -20,10 +20,6 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\edit_user.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/activity_taodonhang.xml",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_taodonhang.xml"
-    },
-    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_login.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_login.xml"
     },
@@ -70,6 +66,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_chitiethanghoa.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_chitiethanghoa.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/edit_user.xml",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/edit_user.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_cart.xml",

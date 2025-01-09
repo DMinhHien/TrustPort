@@ -170,6 +170,7 @@
             android:textSize="20sp" >
         </TextView>
         <Button
+            android:id="@+id/btn_edit_profile_confirm"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Chỉnh sửa"
