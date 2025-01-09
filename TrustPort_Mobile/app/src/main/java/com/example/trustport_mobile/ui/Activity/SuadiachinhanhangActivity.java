@@ -3,6 +3,7 @@ package com.example.trustport_mobile.ui.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -30,6 +31,19 @@ public class SuadiachinhanhangActivity extends AppCompatActivity {
         spinnerQuanHuyen = findViewById(R.id.spinnerQuanHuyen);
         spinnerPhuongXa = findViewById(R.id.spinnerPhuongXa);
         btnXacNhan = findViewById(R.id.btnXacNhan);
+
+        String[] tinhThanh = {"Hà Nội", "Hồ Chí Minh", "Đà Nẵng", "Cần Thơ"};
+        String[] quanHuyen = {"Quận 1", "Quận 2", "Quận 3", "Quận 4"};
+        String[] phuongXa = {"Phường 1", "Phường 2", "Phường 3", "Phường 4"};
+
+        ArrayAdapter<String> adapterTinhThanh = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, tinhThanh);
+        ArrayAdapter<String> adapterQuanHuyen = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, quanHuyen);
+        ArrayAdapter<String> adapterPhuongXa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, phuongXa);
+
+        spinnerTinhThanh.setAdapter(adapterTinhThanh);
+        spinnerQuanHuyen.setAdapter(adapterQuanHuyen);
+        spinnerPhuongXa.setAdapter(adapterPhuongXa);
+
 
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
             @Override

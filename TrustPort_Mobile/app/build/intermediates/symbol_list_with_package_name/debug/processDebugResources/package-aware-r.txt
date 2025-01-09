@@ -3121,6 +3121,7 @@ drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_login
 drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
@@ -3132,6 +3133,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable ic_search_black_24
+drawable ic_signup
 drawable ic_success
 drawable icon_info
 drawable icon_tinit_color

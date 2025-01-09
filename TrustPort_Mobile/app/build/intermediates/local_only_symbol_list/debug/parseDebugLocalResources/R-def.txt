@@ -55,9 +55,11 @@ drawable ic_forgot_password
 drawable ic_home_foreground
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_login
 drawable ic_logout
 drawable ic_orders_foreground
 drawable ic_person_foreground
+drawable ic_signup
 drawable ic_success
 drawable icon_info
 drawable icon_tinit_color
