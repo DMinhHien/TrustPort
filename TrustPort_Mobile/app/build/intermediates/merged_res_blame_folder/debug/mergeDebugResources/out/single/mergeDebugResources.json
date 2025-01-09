@@ -40,6 +40,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_orders_foreground.xml"
     },
     {
+        "merged": "com.example.trustport_mobile.app-debug-4:/layout_activity_taodonhang.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_taodonhang.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_fragment_notification.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_notification.xml"
     },
@@ -96,6 +100,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_product_icon.jpg.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\product_icon.jpg"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -110,10 +118,6 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_ic_person_foreground.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_person_foreground.xml"
-    },
-    {
-        "merged": "com.example.trustport_mobile.app-debug-4:/layout_activity_search_order.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_search_order.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -228,6 +232,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_success.png"
     },
     {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_activity_quenmk.xml.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_quenmk.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_user_black.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\user_black.xml"
     },
@@ -240,8 +248,8 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\notification_item.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-debug-4:/layout_fragment_first.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/fragment_first.xml"
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_ic_forgot_password.png.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_forgot_password.png"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_item_setting_row.xml.flat",
@@ -254,10 +262,6 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_activity_search_order.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_search_order.xml"
-    },
-    {
-        "merged": "com.example.trustport_mobile.app-debug-4:/layout_fragment_third.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/fragment_third.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_background_cycle_green.xml.flat",
@@ -290,6 +294,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_fragment_second.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_activity_taodonhang.xml.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_taodonhang.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",

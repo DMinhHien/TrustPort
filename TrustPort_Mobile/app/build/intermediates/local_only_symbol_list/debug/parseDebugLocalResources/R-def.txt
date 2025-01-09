@@ -51,6 +51,7 @@ drawable ic_arrow_right
 drawable ic_back
 drawable ic_copy
 drawable ic_delivery
+drawable ic_forgot_password
 drawable ic_home_foreground
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -62,6 +63,7 @@ drawable icon_tinit_color
 drawable intro_photo_final
 drawable logo
 drawable notification_icon
+drawable product_icon
 drawable profile_circle_background
 drawable radio_changetext
 drawable radio_food
@@ -76,8 +78,11 @@ id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
+id backButton
 id back_to_login
 id bottomNavigationView
+id btnBack
+id btnContinue
 id btnTraCuu
 id btnXacNhan
 id btn_back
@@ -102,6 +107,7 @@ id editTextHoTen
 id editTextSoDienThoai
 id edit_profile_image
 id edit_toolbar
+id edtInput
 id email
 id email_input
 id flFragment
@@ -111,12 +117,14 @@ id group_food
 id group_food_place
 id group_place
 id group_toolbar
+id headerTitle
 id header_section
 id hero_section
 id hero_title
 id home
 id icon
 id id
+id imgIllustration
 id info
 id iv_arrow
 id iv_copy
@@ -159,6 +167,8 @@ id text_title_2
 id toolbar
 id toolbarFirstFragment
 id toolbarOrderSearch
+id tvInstruction
+id tvTitle
 id tv_address
 id tv_order_id
 id tv_price
@@ -174,9 +184,11 @@ id view2
 layout activity_chitiethanghoa
 layout activity_login
 layout activity_main
+layout activity_quenmk
 layout activity_search_order
 layout activity_signup
 layout activity_suadiachinhanhang
+layout activity_taodonhang
 layout edit_user
 layout fragment_cart
 layout fragment_first

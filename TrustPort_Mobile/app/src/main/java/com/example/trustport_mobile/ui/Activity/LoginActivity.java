@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.trustport_mobile.MainActivity;
 import com.example.trustport_mobile.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -37,8 +39,12 @@ public class LoginActivity extends AppCompatActivity {
                 // Kiểm tra dữ liệu và thực hiện đăng nhập (xử lý logic sau)
                 if (username.isEmpty() || password.isEmpty()) {
                     // Thông báo lỗi (nếu cần)
+                    usernameEditText.setError("Vui lòng nhập tên đăng nhập!");
+                    passwordEditText.setError("Vui lòng nhập mật khẩu!");
                 } else {
                     // Tiến hành đăng nhập
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -48,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Chuyển đến màn hình quên mật khẩu
+                Intent intent = new Intent(LoginActivity.this, ForgotPassActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -3116,6 +3116,7 @@ drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_copy
 drawable ic_delivery
+drawable ic_forgot_password
 drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3209,6 +3210,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable product_icon
 drawable profile_circle_background
 drawable radio_changetext
 drawable radio_food
@@ -3316,6 +3318,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id backButton
 id back_to_login
 id barrier
 id baseline
@@ -3330,6 +3333,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnBack
+id btnContinue
 id btnTraCuu
 id btnXacNhan
 id btn_back
@@ -3429,6 +3434,7 @@ id edit_profile_image
 id edit_query
 id edit_text_id
 id edit_toolbar
+id edtInput
 id elastic
 id email
 id email_input
@@ -3473,6 +3479,7 @@ id group_place
 id group_toolbar
 id grouping
 id groups
+id headerTitle
 id header_section
 id header_title
 id hero_section
@@ -3491,6 +3498,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgIllustration
 id immediateStop
 id included
 id indeterminate
@@ -3795,6 +3803,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvInstruction
+id tvTitle
 id tv_address
 id tv_order_id
 id tv_price
@@ -3949,9 +3959,11 @@ layout abc_tooltip
 layout activity_chitiethanghoa
 layout activity_login
 layout activity_main
+layout activity_quenmk
 layout activity_search_order
 layout activity_signup
 layout activity_suadiachinhanhang
+layout activity_taodonhang
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

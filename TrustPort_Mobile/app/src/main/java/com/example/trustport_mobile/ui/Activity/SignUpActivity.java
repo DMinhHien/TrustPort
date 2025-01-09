@@ -1,11 +1,16 @@
 package com.example.trustport_mobile.ui.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.trustport_mobile.MainActivity;
 import com.example.trustport_mobile.R;
 
 public class SignUpActivity extends AppCompatActivity {
@@ -36,13 +41,28 @@ public class SignUpActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
                 String confirmPassword = confirmPasswordEditText.getText().toString();
 
-                // Kiểm tra dữ liệu hợp lệ và xử lý logic đăng ký
-                if (username.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
-                    // Hiển thị thông báo lỗi nếu thiếu dữ liệu
+                // Kiểm tra trường rỗng
+                if (username.isEmpty()) {
+                    usernameEditText.setError("Vui lòng nhập tên đăng nhập");
+                    usernameEditText.requestFocus();
+                } else if (email.isEmpty()) {
+                    emailEditText.setError("Vui lòng nhập email");
+                    emailEditText.requestFocus();
+                } else if (password.isEmpty()) {
+                    passwordEditText.setError("Vui lòng nhập mật khẩu");
+                    passwordEditText.requestFocus();
+                } else if (confirmPassword.isEmpty()) {
+                    confirmPasswordEditText.setError("Vui lòng nhập xác nhận mật khẩu");
+                    confirmPasswordEditText.requestFocus();
                 } else if (!password.equals(confirmPassword)) {
-                    // Hiển thị thông báo lỗi nếu mật khẩu không khớp
+                    confirmPasswordEditText.setError("Mật khẩu xác nhận không khớp");
+                    confirmPasswordEditText.requestFocus();
                 } else {
-                    // Thực hiện logic đăng ký (gửi dữ liệu đến server, v.v.)
+                    // Chuyển đến MainActivity nếu dữ liệu hợp lệ
+                    Toast.makeText(SignUpActivity.this, "Đăng ký thành công!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });
