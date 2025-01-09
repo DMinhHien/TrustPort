@@ -8,6 +8,7 @@ color colorPrimary
 color gray
 color green
 color grey
+color ic_launcher_background
 color light_gray
 color orange
 color purple_200
@@ -41,6 +42,7 @@ drawable baseline_mark_unread_chat_alt_24
 drawable baseline_menu_book_24
 drawable baseline_more_horiz_24
 drawable baseline_notifications_24
+drawable baseline_saved_search_24
 drawable baseline_security_24
 drawable baseline_settings_applications_24
 drawable box_search
@@ -101,7 +103,6 @@ id btn_edit_profile_confirm
 id btn_more
 id btn_route
 id button_newOrder
-id child_fragment_container
 id child_recycler_view
 id confirm_password
 id confirm_password_input
@@ -123,9 +124,7 @@ id flFragment
 id footer
 id forgot_password
 id group
-id group_food
-id group_food_place
-id group_place
+id group2
 id group_toolbar
 id headerTitle
 id header_section
@@ -153,6 +152,7 @@ id notification_content
 id notification_recycler_view
 id notification_time
 id notification_title
+id order_list
 id orders
 id password
 id password_input

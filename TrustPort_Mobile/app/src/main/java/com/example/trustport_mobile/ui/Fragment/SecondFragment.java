@@ -23,28 +23,25 @@ public class SecondFragment extends Fragment {
     public SecondFragment(){
         // require a empty public constructor
     }
-
+    private RecyclerView recyclerView;
+    private OrderAdapter adapter;
+    private List<Order> orderList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view= inflater.inflate(R.layout.fragment_second, container, false);
-        RadioGroup radioGroup = view.findViewById(R.id.group_food_place);
+        recyclerView = view.findViewById(R.id.order_list);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Hiển thị Fragment mặc định ("Đơn gửi")
-        replaceFragment(new FragmentSend());
-        radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == R.id.group_place) {
-                replaceFragment(new FragmentSend());
-            } else if (checkedId == R.id.group_food) {
-                replaceFragment(new FragmentReceive());
-            }
-        });
+        // Dữ liệu mẫu cho "Đơn gửi"
+        orderList = new ArrayList<>();
+        orderList.add(new Order("123456789", "Giao thành công", "Dương Minh Hiền/ 082*****38",
+                "📍 128 Nguyễn Thị Định", "📦 1x Chảo chống dính", "💲 200.000 đ"));
+        orderList.add(new Order("987654321", "Đang giao", "Nguyễn Văn A/ 091*****12",
+                "📍 45 Lý Thường Kiệt", "📦 2x Bát thủy tinh", "💲 150.000 đ"));
+        adapter = new OrderAdapter(orderList);
+        recyclerView.setAdapter(adapter);
         return view;
-    }
-    private void replaceFragment(Fragment fragment) {
-        FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.child_fragment_container, fragment);
-        transaction.commit();
     }
 
 }
