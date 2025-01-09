@@ -4,12 +4,13 @@ package com.example.trustport_mobile.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.trustport_mobile.R;
@@ -19,10 +20,16 @@ import java.lang.String;
 
 public final class FragmentFirstBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final NestedScrollView rootView;
+
+  @NonNull
+  public final FrameLayout bannerFrame;
 
   @NonNull
   public final LinearLayout btnTraCuu;
+
+  @NonNull
+  public final LinearLayout footer;
 
   @NonNull
   public final LinearLayout group;
@@ -33,11 +40,13 @@ public final class FragmentFirstBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbarFirstFragment;
 
-  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout btnTraCuu,
-      @NonNull LinearLayout group, @NonNull SearchView searchView,
-      @NonNull Toolbar toolbarFirstFragment) {
+  private FragmentFirstBinding(@NonNull NestedScrollView rootView, @NonNull FrameLayout bannerFrame,
+      @NonNull LinearLayout btnTraCuu, @NonNull LinearLayout footer, @NonNull LinearLayout group,
+      @NonNull SearchView searchView, @NonNull Toolbar toolbarFirstFragment) {
     this.rootView = rootView;
+    this.bannerFrame = bannerFrame;
     this.btnTraCuu = btnTraCuu;
+    this.footer = footer;
     this.group = group;
     this.searchView = searchView;
     this.toolbarFirstFragment = toolbarFirstFragment;
@@ -45,7 +54,7 @@ public final class FragmentFirstBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public NestedScrollView getRoot() {
     return rootView;
   }
 
@@ -70,9 +79,21 @@ public final class FragmentFirstBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bannerFrame;
+      FrameLayout bannerFrame = ViewBindings.findChildViewById(rootView, id);
+      if (bannerFrame == null) {
+        break missingId;
+      }
+
       id = R.id.btnTraCuu;
       LinearLayout btnTraCuu = ViewBindings.findChildViewById(rootView, id);
       if (btnTraCuu == null) {
+        break missingId;
+      }
+
+      id = R.id.footer;
+      LinearLayout footer = ViewBindings.findChildViewById(rootView, id);
+      if (footer == null) {
         break missingId;
       }
 
@@ -94,8 +115,8 @@ public final class FragmentFirstBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFirstBinding((ConstraintLayout) rootView, btnTraCuu, group, searchView,
-          toolbarFirstFragment);
+      return new FragmentFirstBinding((NestedScrollView) rootView, bannerFrame, btnTraCuu, footer,
+          group, searchView, toolbarFirstFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
