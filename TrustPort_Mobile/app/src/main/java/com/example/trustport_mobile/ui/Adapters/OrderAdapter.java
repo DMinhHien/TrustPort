@@ -45,6 +45,10 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             Intent intent = new Intent(holder.itemView.getContext(), ChitietdonhangActivity.class);
             holder.itemView.getContext().startActivity(intent);
         });
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), ChitietdonhangActivity.class);
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
