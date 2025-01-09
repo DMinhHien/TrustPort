@@ -17,14 +17,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <!-- Nút quay lại -->
-            <ImageView
-                android:id="@+id/btn_back"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_back"
-                android:layout_gravity="start|top"
-                android:layout_marginTop="16dp" />
+
 
             <!-- Tiêu đề -->
             <TextView

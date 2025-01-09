@@ -22,6 +22,9 @@ public final class FragmentFirstBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final LinearLayout btnTraCuu;
+
+  @NonNull
   public final LinearLayout group;
 
   @NonNull
@@ -30,9 +33,11 @@ public final class FragmentFirstBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbarFirstFragment;
 
-  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout group,
-      @NonNull SearchView searchView, @NonNull Toolbar toolbarFirstFragment) {
+  private FragmentFirstBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout btnTraCuu,
+      @NonNull LinearLayout group, @NonNull SearchView searchView,
+      @NonNull Toolbar toolbarFirstFragment) {
     this.rootView = rootView;
+    this.btnTraCuu = btnTraCuu;
     this.group = group;
     this.searchView = searchView;
     this.toolbarFirstFragment = toolbarFirstFragment;
@@ -65,6 +70,12 @@ public final class FragmentFirstBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnTraCuu;
+      LinearLayout btnTraCuu = ViewBindings.findChildViewById(rootView, id);
+      if (btnTraCuu == null) {
+        break missingId;
+      }
+
       id = R.id.group;
       LinearLayout group = ViewBindings.findChildViewById(rootView, id);
       if (group == null) {
@@ -83,7 +94,7 @@ public final class FragmentFirstBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFirstBinding((ConstraintLayout) rootView, group, searchView,
+      return new FragmentFirstBinding((ConstraintLayout) rootView, btnTraCuu, group, searchView,
           toolbarFirstFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);

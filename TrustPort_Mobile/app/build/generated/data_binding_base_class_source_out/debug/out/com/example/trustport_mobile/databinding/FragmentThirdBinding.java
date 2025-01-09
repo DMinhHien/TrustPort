@@ -23,9 +23,6 @@ public final class FragmentThirdBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView btnBack;
-
-  @NonNull
   public final Button btnEditProfile;
 
   @NonNull
@@ -37,11 +34,9 @@ public final class FragmentThirdBinding implements ViewBinding {
   @NonNull
   public final TextView tvTitle;
 
-  private FragmentThirdBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnBack,
-      @NonNull Button btnEditProfile, @NonNull ImageView ivProfileImage, @NonNull Toolbar toolbar,
-      @NonNull TextView tvTitle) {
+  private FragmentThirdBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnEditProfile,
+      @NonNull ImageView ivProfileImage, @NonNull Toolbar toolbar, @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.btnBack = btnBack;
     this.btnEditProfile = btnEditProfile;
     this.ivProfileImage = ivProfileImage;
     this.toolbar = toolbar;
@@ -75,12 +70,6 @@ public final class FragmentThirdBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_back;
-      ImageView btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
-        break missingId;
-      }
-
       id = R.id.btn_edit_profile;
       Button btnEditProfile = ViewBindings.findChildViewById(rootView, id);
       if (btnEditProfile == null) {
@@ -105,8 +94,8 @@ public final class FragmentThirdBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentThirdBinding((ConstraintLayout) rootView, btnBack, btnEditProfile,
-          ivProfileImage, toolbar, tvTitle);
+      return new FragmentThirdBinding((ConstraintLayout) rootView, btnEditProfile, ivProfileImage,
+          toolbar, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

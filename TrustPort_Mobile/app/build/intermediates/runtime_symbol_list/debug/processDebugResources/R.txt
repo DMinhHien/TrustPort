@@ -3329,6 +3329,7 @@ int id bounce 0x7f090069
 int id bounceBoth 0x7f09006a
 int id bounceEnd 0x7f09006b
 int id bounceStart 0x7f09006c
+int id btnTraCuu 0x7f090261
 int id btnXacNhan 0x7f09006d
 int id btn_back 0x7f09006e
 int id btn_call 0x7f09006f

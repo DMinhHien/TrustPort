@@ -78,6 +78,7 @@ id action_SecondFragment_to_FirstFragment
 id action_settings
 id back_to_login
 id bottomNavigationView
+id btnTraCuu
 id btnXacNhan
 id btn_back
 id btn_call

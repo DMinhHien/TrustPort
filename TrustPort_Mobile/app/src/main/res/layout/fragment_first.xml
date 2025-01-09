@@ -41,6 +41,7 @@
 
         <!-- Item 1 -->
         <LinearLayout
+            android:id="@+id/btnTraCuu"
             android:layout_width="0dp"
             android:layout_height="?attr/actionBarSize"
             android:layout_weight="1"

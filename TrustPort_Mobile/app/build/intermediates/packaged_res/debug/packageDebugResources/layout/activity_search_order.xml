@@ -4,75 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarOrderSearch"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.appcompat.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/text_order"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="12dp"
         android:textSize="20dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:text="Tra cứu đơn hàng"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Tra cứu đơn hàng"
-        android:textColor="@color/white" />
+        app:layout_constraintTop_toTopOf="@+id/toolbarOrderSearch" />
+
     <TextView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="12dp"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbarOrderSearch"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
         android:text="Mã phiếu gửi"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarOrderSearch" />
+
     <TextView
         android:id="@+id/text_title_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="15sp"
         android:text="(Tra nhiều bill bằng cách thêm dấu phẩy giữa các bill)"
-        android:textColor="@color/black" />
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/searchbar_background"
-        android:drawablePadding="10dp"
-        android:fontFamily="sans-serif-condensed"
         android:textColor="@color/black"
-        android:gravity="center_vertical"
-        android:maxLines="1"
-        android:text="VD: 12345,45677"
-        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/searchbar_background"
+        android:hint="VD: 12345,45677"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/black"
         android:textColorHint="#808080"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_title_2"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title_2" />
+
     <Button
         android:id="@+id/btn_edit_profile"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tra cứu"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorPrimary"
+        android:text="Tra cứu"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/id"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

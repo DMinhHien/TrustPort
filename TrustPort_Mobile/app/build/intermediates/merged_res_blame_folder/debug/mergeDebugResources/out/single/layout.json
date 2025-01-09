@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/fragment_first.xml",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/fragment_first.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_signup.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_signup.xml"
     },
@@ -20,6 +24,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\edit_user.xml"
     },
     {
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/fragment_third.xml",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/fragment_third.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_login.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_login.xml"
     },
@@ -32,10 +40,6 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/notification_item.xml",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/notification_item.xml"
-    },
-    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\order_item.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\order_item.xml"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_second.xml",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/activity_search_order.xml",
+        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_search_order.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_location.xml",

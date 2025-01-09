@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
                     .beginTransaction()
                     .replace(R.id.flFragment, notificationFragment)
                     .commit();
+            return true;
         }
 
         return false;

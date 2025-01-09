@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,7 +26,7 @@ public final class ActivitySearchOrderBinding implements ViewBinding {
   public final Button btnEditProfile;
 
   @NonNull
-  public final TextView id;
+  public final EditText id;
 
   @NonNull
   public final TextView textOrder;
@@ -40,7 +41,7 @@ public final class ActivitySearchOrderBinding implements ViewBinding {
   public final Toolbar toolbarOrderSearch;
 
   private ActivitySearchOrderBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnEditProfile, @NonNull TextView id, @NonNull TextView textOrder,
+      @NonNull Button btnEditProfile, @NonNull EditText id, @NonNull TextView textOrder,
       @NonNull TextView textTitle, @NonNull TextView textTitle2,
       @NonNull Toolbar toolbarOrderSearch) {
     this.rootView = rootView;
@@ -86,7 +87,7 @@ public final class ActivitySearchOrderBinding implements ViewBinding {
       }
 
       id = R.id.id;
-      TextView id_ = ViewBindings.findChildViewById(rootView, id);
+      EditText id_ = ViewBindings.findChildViewById(rootView, id);
       if (id_ == null) {
         break missingId;
       }
