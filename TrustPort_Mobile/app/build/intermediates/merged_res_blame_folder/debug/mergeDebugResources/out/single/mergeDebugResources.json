@@ -12,6 +12,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_cart.xml"
     },
     {
+        "merged": "com.example.trustport_mobile.app-debug-4:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-6:/menu/bottom_nav_menu.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_radio_food.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\radio_food.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_ic_orders_foreground.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\ic_orders_foreground.xml"
+    },
+    {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_fragment_notification.xml.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_notification.xml"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -184,6 +192,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_location.xml"
     },
     {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_alert_ic.png.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\alert_ic.png"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\xml_backup_rules.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\xml\\backup_rules.xml"
     },
@@ -220,8 +232,16 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\status_background.xml"
     },
     {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_notification_item.xml.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\notification_item.xml"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_item_setting_row.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\item_setting_row.xml"
+    },
+    {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_notification_icon.png.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\notification_icon.png"
     },
     {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\layout_activity_search_order.xml.flat",
@@ -292,6 +312,10 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\icon_tinit_color.xml"
     },
     {
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_icon_info.png.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\icon_info.png"
+    },
+    {
         "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -316,11 +340,11 @@
         "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\baseline_security_24.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_baseline_bookmark_24_black.xml.flat",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\baseline_bookmark_24_black.xml"
+        "merged": "com.example.trustport_mobile.app-debug-4:/drawable_alert_fragmenticon.png.flat",
+        "source": "com.example.trustport_mobile.app-main-6:/drawable/alert_fragmenticon.png"
     },
     {
-        "merged": "com.example.trustport_mobile.app-debug-4:/layout_activity_chitiethanghoa.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/activity_chitiethanghoa.xml"
+        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-4:\\drawable_baseline_bookmark_24_black.xml.flat",
+        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\drawable\\baseline_bookmark_24_black.xml"
     }
 ]

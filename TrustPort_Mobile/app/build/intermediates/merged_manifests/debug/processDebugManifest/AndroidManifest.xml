@@ -53,6 +53,10 @@
             android:name="com.example.trustport_mobile.ui.Activity.SuadiachinhanhangActivity"
             android:exported="true" >
         </activity>
+        <activity
+            android:name="com.example.trustport_mobile.ui.Activity.NotificationActivity"
+            android:exported="true" >
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

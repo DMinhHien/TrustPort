@@ -5,6 +5,7 @@ array status_filter_options
 color black
 color blue
 color colorPrimary
+color gray
 color green
 color grey
 color light_gray
@@ -20,6 +21,8 @@ color trans
 color trans_black
 color white
 dimen fab_margin
+drawable alert_fragmenticon
+drawable alert_ic
 drawable background_cycle_blue
 drawable background_cycle_green
 drawable background_cycle_grey
@@ -54,9 +57,11 @@ drawable ic_launcher_foreground
 drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable ic_success
+drawable icon_info
 drawable icon_tinit_color
 drawable intro_photo_final
 drawable logo
+drawable notification_icon
 drawable profile_circle_background
 drawable radio_changetext
 drawable radio_food
@@ -106,7 +111,10 @@ id group_food_place
 id group_place
 id group_toolbar
 id header_section
+id hero_section
+id hero_title
 id home
+id icon
 id id
 id info
 id iv_arrow
@@ -120,6 +128,11 @@ id mySaved_txt
 id mycart_txt
 id name
 id nav_graph
+id notification
+id notification_content
+id notification_recycler_view
+id notification_time
+id notification_title
 id orders
 id password
 id password_input
@@ -167,11 +180,13 @@ layout edit_user
 layout fragment_cart
 layout fragment_first
 layout fragment_location
+layout fragment_notification
 layout fragment_saved
 layout fragment_second
 layout fragment_second_child
 layout fragment_third
 layout item_setting_row
+layout notification_item
 layout order_item
 layout receipt_detail_item
 menu bottom_nav_menu

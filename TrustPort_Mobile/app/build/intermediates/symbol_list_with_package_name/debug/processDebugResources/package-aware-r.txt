@@ -1483,6 +1483,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color green
 color grey
 color highlighted_text_material_dark
@@ -3061,6 +3062,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alert_fragmenticon
+drawable alert_ic
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_cycle_blue
@@ -3128,6 +3131,7 @@ drawable ic_orders_foreground
 drawable ic_person_foreground
 drawable ic_search_black_24
 drawable ic_success
+drawable icon_info
 drawable icon_tinit_color
 drawable indeterminate_static
 drawable intro_photo_final
@@ -3198,6 +3202,7 @@ drawable notification_bg_low_normal
 drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
+drawable notification_icon
 drawable notification_icon_background
 drawable notification_oversize_large_icon_bg
 drawable notification_template_icon_bg
@@ -3469,6 +3474,8 @@ id grouping
 id groups
 id header_section
 id header_title
+id hero_section
+id hero_title
 id hide_ime_id
 id hideable
 id home
@@ -3593,9 +3600,14 @@ id noState
 id none
 id normal
 id north
+id notification
 id notification_background
+id notification_content
 id notification_main_column
 id notification_main_column_container
+id notification_recycler_view
+id notification_time
+id notification_title
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3959,6 +3971,7 @@ layout edit_user
 layout fragment_cart
 layout fragment_first
 layout fragment_location
+layout fragment_notification
 layout fragment_saved
 layout fragment_second
 layout fragment_second_child
@@ -4019,6 +4032,7 @@ layout mtrl_search_bar
 layout mtrl_search_view
 layout notification_action
 layout notification_action_tombstone
+layout notification_item
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer

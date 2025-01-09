@@ -3,6 +3,7 @@ package com.example.trustport_mobile;
 import android.os.Bundle;
 
 import com.example.trustport_mobile.ui.Fragment.FirstFragment;
+import com.example.trustport_mobile.ui.Fragment.NotificationFragment;
 import com.example.trustport_mobile.ui.Fragment.SecondFragment;
 import com.example.trustport_mobile.ui.Fragment.ThirdFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
     FirstFragment firstFragment = new FirstFragment();
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
+
+    NotificationFragment notificationFragment = new NotificationFragment();
     @Override
     public boolean
     onNavigationItemSelected(@NonNull MenuItem item)
@@ -55,6 +58,11 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
                     .replace(R.id.flFragment, thirdFragment)
                     .commit();
             return true;
+        } else if (id == R.id.notification) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, notificationFragment)
+                    .commit();
         }
 
         return false;
