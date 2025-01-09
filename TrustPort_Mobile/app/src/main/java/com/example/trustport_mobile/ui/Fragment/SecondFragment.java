@@ -37,7 +37,7 @@ public class SecondFragment extends Fragment {
         orderList = new ArrayList<>();
         orderList.add(new Order("123456789", "Giao thành công", "Dương Minh Hiền/ 082*****38",
                 "📍 128 Nguyễn Thị Định", "📦 1x Chảo chống dính", "💲 200.000 đ"));
-        orderList.add(new Order("987654321", "Đang giao", "Nguyễn Văn A/ 091*****12",
+        orderList.add(new Order("987654321", "Đang giao hàng", "Nguyễn Văn A/ 091*****12",
                 "📍 45 Lý Thường Kiệt", "📦 2x Bát thủy tinh", "💲 150.000 đ"));
         adapter = new OrderAdapter(orderList);
         recyclerView.setAdapter(adapter);

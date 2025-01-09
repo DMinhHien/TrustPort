@@ -7,13 +7,13 @@
     <item
         android:id="@+id/orders"
         android:title="Đơn hàng"
-        android:icon="@drawable/ic_orders_foreground"/>
-    <item
-        android:id="@+id/person"
-        android:title="Thông tin"
-        android:icon="@drawable/ic_person_foreground"/>
+        android:icon="@drawable/ic_orders_foreground"/>\
     <item
         android:id="@+id/notification"
         android:title="Thông báo"
         android:icon="@drawable/alert_fragmenticon"/>
+    <item
+        android:id="@+id/person"
+        android:title="Thông tin"
+        android:icon="@drawable/ic_person_foreground"/>
 </menu>

@@ -49,6 +49,14 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             Intent intent = new Intent(holder.itemView.getContext(), ChitietdonhangActivity.class);
             holder.itemView.getContext().startActivity(intent);
         });
+        holder.status.setText(order.getStatus());
+
+        // Thay đổi màu nền dựa trên trạng thái
+        if ("Đang giao hàng".equals(order.getStatus())) {
+            holder.status.setBackgroundResource(R.drawable.status_yellow_background);
+        } else if ("Giao thành công".equals(order.getStatus())) {
+            holder.status.setBackgroundResource(R.drawable.status_background);
+        }
     }
 
     @Override

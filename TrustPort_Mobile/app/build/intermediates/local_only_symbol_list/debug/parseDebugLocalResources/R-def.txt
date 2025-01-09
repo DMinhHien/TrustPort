@@ -66,6 +66,7 @@ drawable ic_signup
 drawable ic_success
 drawable icon_info
 drawable icon_tinit_color
+drawable img
 drawable intro_photo_final
 drawable logo
 drawable notification_icon
@@ -78,6 +79,7 @@ drawable rounded_circle
 drawable searchbar_background
 drawable spinner_background
 drawable status_background
+drawable status_yellow_background
 drawable tiktok_icon
 drawable user_black
 drawable youtube_icon

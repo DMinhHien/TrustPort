@@ -25,12 +25,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     style="@style/TEXT"
-                    android:layout_margin="10dp"
+                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:iconifiedByDefault="false"
                     android:queryHint="Search here"
                     android:searchIcon="@android:drawable/ic_menu_search"
-                    android:layout_gravity="top" />
+                    android:layout_gravity="center" />
             </FrameLayout>
         </androidx.appcompat.widget.Toolbar>
         <!-- Group of Items -->
@@ -140,8 +140,7 @@
                 <FrameLayout
                     android:layout_width="42dp"
                     android:layout_height="42dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/background_cycle_grey">
+                    android:layout_gravity="center">
 
                     <ImageView
                         android:layout_width="31dp"
@@ -152,10 +151,11 @@
                 </FrameLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="18dp"
+                    android:layout_width="54dp"
+                    android:layout_height="34dp"
                     android:layout_marginTop="4dp"
-                    android:text="Tạo đơn hàng"
+                    android:gravity="center"
+                    android:text="Tư vấn đơn hàng"
                     android:textSize="12sp"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -231,7 +231,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/container_image"
+                android:src="@drawable/img"
                 android:contentDescription="Main Image" />
             <View
                 android:layout_width="180dp"

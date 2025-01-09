@@ -41,10 +41,13 @@ public final class FragmentSecondBinding implements ViewBinding {
   @NonNull
   public final TextView textOrder;
 
+  @NonNull
+  public final TextView tvTitle;
+
   private FragmentSecondBinding(@NonNull ConstraintLayout rootView, @NonNull Toolbar groupToolbar,
       @NonNull RecyclerView orderList, @NonNull Spinner spinnerDate,
       @NonNull LinearLayout spinnerGroup, @NonNull Spinner spinnerStatus,
-      @NonNull TextView textOrder) {
+      @NonNull TextView textOrder, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.groupToolbar = groupToolbar;
     this.orderList = orderList;
@@ -52,6 +55,7 @@ public final class FragmentSecondBinding implements ViewBinding {
     this.spinnerGroup = spinnerGroup;
     this.spinnerStatus = spinnerStatus;
     this.textOrder = textOrder;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -117,8 +121,14 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
       return new FragmentSecondBinding((ConstraintLayout) rootView, groupToolbar, orderList,
-          spinnerDate, spinnerGroup, spinnerStatus, textOrder);
+          spinnerDate, spinnerGroup, spinnerStatus, textOrder, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
