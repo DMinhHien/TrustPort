@@ -1,13 +1,14 @@
 import React from 'react';
 import { Card, CardContent, Grid, Typography, Divider, Box } from '@mui/material';
 import { Order } from '../../data/Order';
-
+import OrderStatusCard from './OrderStatus';
 interface OrderDetailProps {
     order: Order;
 }
 
 const OrderDetail: React.FC<OrderDetailProps> = ({ order }) => {
     return (
+        <Box sx={{ padding: 3 }}>
         <Card sx={{ width: '100%', margin: 'auto', padding: 2, mt: 3, boxShadow: 3 }}>
             <Typography variant="h5" component="div" sx={{ mb: 2, fontWeight: 'bold' }}>
                 Thông Tin Vận Đơn
@@ -63,6 +64,10 @@ const OrderDetail: React.FC<OrderDetailProps> = ({ order }) => {
                 </Grid>
             </CardContent>
         </Card>
+        {order.liststatus.map((orderstatus) => (
+          <OrderStatusCard key={orderstatus.id} status={orderstatus} />
+        ))}
+        </Box>
     );
 };
 
