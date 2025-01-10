@@ -5,6 +5,7 @@ import { Order } from '../../data/Order';
 import OrderStatusCard from '../Order/OrderStatus';
 import { OrderStatus } from '../../data/OrderStatus';
 import sampleOrderStatus from '../../data/OrderStatus';
+import OrderCard from '../Order/OrderCard';
 const orders: Order[] = [
     {
       orderId: 'ORD123456',
@@ -24,7 +25,7 @@ const orders: Order[] = [
     return (
       <Box sx={{ padding: 3 }}>
         {orders.map((order) => (
-          <OrderDetail key={order.orderId} order={order} />
+          <OrderCard key={order.orderId} order={order} />
         ))}     
       </Box>
     );

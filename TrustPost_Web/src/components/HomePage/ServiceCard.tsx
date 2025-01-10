@@ -1,7 +1,7 @@
 
 import { Grid, Card, CardContent, Typography, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
-import service1 from "../../assets/service1.png"
+import service1 from "../../assets/backgrounddelivery_icon.jpg"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
 

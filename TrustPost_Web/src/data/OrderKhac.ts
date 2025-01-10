@@ -10,10 +10,10 @@ export interface Order {
     createdDate: string;
     receivedDate?: string;
     estimatedDeliveryDate: string;
-    liststatus: OrderStatus[]
+    liststatus: OrderStatus[];
   }
 
-  const orders: Order[] = [
+  const order1: Order = 
     {
       orderId: 'ORD123456',
       senderAddress: '123 Đường A, Quận B, TP.HCM',
@@ -25,20 +25,7 @@ export interface Order {
       receivedDate: '2025-01-06',
       estimatedDeliveryDate: '2025-01-10',
       liststatus: sampleOrderStatus
-    },
-    {
-        orderId: 'ORD1234567',
-        senderAddress: '234 Đường A, Quận B, TP.HCM',
-        recipientAddress: '456 Đường X, Quận Y, Hà Nội',
-        weight: 10,
-        service: 'Chuyển phát nhanh',
-        status: 'Đang giao',
-        createdDate: '2025-01-05',
-        receivedDate: '2025-01-06',
-        estimatedDeliveryDate: '2025-01-10',
-        liststatus: sampleOrderStatus
-      },
-];
+    };
 
-export default orders;
 
+export default order1;

@@ -22,10 +22,7 @@ const OrderDetail: React.FC<OrderDetailProps> = ({ order }) => {
                             <Typography variant="subtitle1" sx={{ mr: 1 }}>Mã Phiếu Gửi:</Typography>
                             <Typography variant="body1" sx={{ fontWeight: 'bold' }}>{order.orderId}</Typography>
                         </Box>
-                        <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-                            <Typography variant="subtitle1" sx={{ mr: 1 }}>Chi tiết đơn hàng:</Typography>
-                            <Typography variant="body1" sx={{ fontWeight: 'bold', color: 'blue', textDecoration: 'underline' }}>Xem chi tiết</Typography>
-                        </Box>
+                        
                         <Typography variant="subtitle1">Địa Chỉ Người Gửi:</Typography>
                         <Typography variant="body1" sx={{ fontWeight: 'bold' }}>{order.senderAddress}</Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
