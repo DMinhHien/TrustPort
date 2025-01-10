@@ -4,13 +4,14 @@ import { styled } from '@mui/system';
 import service1 from "../../assets/backgrounddelivery_icon.jpg"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
+import service4 from "../../assets/post.jpg"
 import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
     title: "EXPRESS",
     description: "Giao tận nơi 63 tỉnh thành dành cho mặt hàng nhỏ 20kg",
-    image: service1,
+    image: service4,
   },
   {
     title: "TRUST",
