@@ -6,6 +6,8 @@ import ForgotPassPage from "./components/Account/ForgotPassword";
 import Example from "./components/Example/example";
 import OrderList from "./components/Order/OrderList";
 import OrderDetailPage from "./components/Order/OrderDetailPage";
+import NotificationPage from "./components/Notification/NotificationPage";
+import ProfilePage from "./pages/ProfilePage";
 const router = createBrowserRouter ([
     {
         path: "/signin",
@@ -34,6 +36,14 @@ const router = createBrowserRouter ([
     {
         path: "/orderdetail",
         element: <OrderDetailPage/>
+    },
+    {
+        path: "/notification",
+        element: <NotificationPage/>
+    },
+    {
+        path: "/profile",
+        element: <ProfilePage/>
     }
 ]);
 

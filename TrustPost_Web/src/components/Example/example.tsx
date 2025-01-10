@@ -6,6 +6,8 @@ import OrderStatusCard from '../Order/OrderStatus';
 import { OrderStatus } from '../../data/OrderStatus';
 import sampleOrderStatus from '../../data/OrderStatus';
 import OrderCard from '../Order/OrderCard';
+import NotificationCard from '../Notification/NotificationCard';
+import notifications from '../../data/Notification'
 const orders: Order[] = [
     {
       orderId: 'ORD123456',
@@ -23,11 +25,18 @@ const orders: Order[] = [
 
   const Example: React.FC = () => {
     return (
+        <>
       <Box sx={{ padding: 3 }}>
         {orders.map((order) => (
           <OrderCard key={order.orderId} order={order} />
         ))}     
       </Box>
+      <Box>
+      {notifications.map((notification) => (
+        <NotificationCard key={notification.id} notification={notification} />
+      ))}
+    </Box>
+    </>
     );
   };
   

@@ -4,6 +4,7 @@ import { styled } from '@mui/system';
 import service1 from "../../assets/backgrounddelivery_icon.jpg"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
@@ -76,6 +77,14 @@ const AddButton = styled(Button)(({  }) => ({
 }));
 
 const ServiceCardGrid = () => {
+  const navigate = useNavigate(); // Khởi tạo navigate function
+
+  const handleButtonClick = (title: string) => {
+    if (title === "MANAGE") {
+      navigate("/order");
+    }
+  };
+  
   return (
     <Box sx={{ padding: '20px' }}>
       <Typography variant="h5" sx={{ marginBottom: '20px', fontWeight: 'bold' }}>
@@ -95,7 +104,8 @@ const ServiceCardGrid = () => {
                   {card.description}
                 </Typography>
               </CardContent>
-              <AddButton variant="contained">+</AddButton>
+              <AddButton variant="contained"
+              onClick={() => handleButtonClick(card.title)}>+</AddButton>
             </CardOverlay>
           </CardContainer>
         </Grid>

@@ -15,7 +15,8 @@ const Header = () => {
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Logo hoặc các menu chính */}
         <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <Typography variant="h6" sx={{ fontSize: '16px', cursor: 'pointer' }}>
+          <Typography variant="h6" sx={{ fontSize: '16px', cursor: 'pointer' }}
+           onClick={() => navigate('/')}>
             Trang chủ
           </Typography>
           <Typography variant="h6" sx={{ fontSize: '16px', cursor: 'pointer' }}>
@@ -53,12 +54,12 @@ const Header = () => {
           </Box>
 
          {/* Biểu tượng thông báo */}
-         <IconButton sx={{ color: 'white' }}>
+         <IconButton sx={{ color: 'white' }} onClick={() => navigate('/notification')}>
             <NotificationsIcon />
           </IconButton>
 
           {/* Biểu tượng người dùng */}
-          <IconButton sx={{ color: 'white' }}>
+          <IconButton sx={{ color: 'white' }} onClick={() => navigate('/profile')}>
             <PeopleIcon />
           </IconButton>
           
