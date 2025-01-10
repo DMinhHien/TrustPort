@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -10,7 +10,11 @@ import {
   Tab,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import delivery from "../../assets/delivery.png"
+import delivery from "../../assets/delivery.png";
+
+// Components cho từng tab
+import Tracuu from '../Service/TraCuu';  // Giao diện tra cứu vận đơn
+
 const Container = styled(Box)({
   display: "flex",
   flexDirection: "column",
@@ -19,14 +23,10 @@ const Container = styled(Box)({
   padding: "20px",
   backgroundColor: "#f9f9f9",
   borderRadius: "8px",
-  maxWidth: "600px",
-  margin: "auto",
+  width: "100%", // Adjusted to take full width of screen
+  maxWidth: "100%", // Make sure it doesn't have a maximum width limit
+  margin: "auto", // Keep auto margins to center content horizontally
   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-});
-
-const Illustration = styled("img")({
-  width: "150px",
-  marginTop: "20px",
 });
 
 const TabContainer = styled(Box)({
@@ -40,16 +40,40 @@ const TabContainer = styled(Box)({
 });
 
 const Service = () => {
-  const [value] = React.useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
 
-//   const handleChange = (event, newValue) => {
-//     setValue(newValue);
-//   };
+  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+    setSelectedTab(newValue);
+  };
+
+  // Hàm render nội dung tab
+  const renderTabContent = () => {
+    switch (selectedTab) {
+      case 0:
+        return <Tracuu />;
+      case 1:
+        return <Tracuu />;
+      case 2:
+        return <Tracuu />;
+      case 3:
+        return <Tracuu />;
+      case 4:
+        return <Tracuu />;
+      default:
+        return <Tracuu />;
+    }
+  };
 
   return (
     <Container>
       <TabContainer>
-        <Tabs value={value} indicatorColor="primary" textColor="primary">
+        <Tabs 
+          value={selectedTab} 
+          onChange={handleTabChange} 
+          indicatorColor="primary" 
+          textColor="primary"
+          variant="scrollable"
+        >
           <Tab label="Tra cứu vận đơn" />
           <Tab label="Ước tính cước phí" />
           <Tab label="Tìm kiếm bưu cục" />
@@ -58,34 +82,8 @@ const Service = () => {
         </Tabs>
       </TabContainer>
 
-      <Typography variant="h6" fontWeight="bold" gutterBottom>
-        Mã phiếu gửi
-      </Typography>
-      <Typography variant="body2" color="textSecondary" gutterBottom>
-        (Tra nhiều bill bằng cách thêm dấu phẩy giữa các bill)
-      </Typography>
-      <TextField
-        fullWidth
-        variant="outlined"
-        placeholder="VD : 12354,45677"
-        sx={{ marginBottom: "16px" }}
-      />
-      <FormControlLabel
-        control={<Checkbox />}
-        label="Tôi không phải là người máy"
-      />
-      <Button
-        variant="contained"
-        color="primary"
-        size="large"
-        sx={{ marginTop: "16px" }}
-      >
-        TRA CỨU
-      </Button>
-      <Illustration
-        src={delivery} // Thay thế bằng đường dẫn ảnh của bạn
-        alt="Illustration"
-      />
+      {/* Hiển thị nội dung tab được chọn */}
+      {renderTabContent()}
     </Container>
   );
 };
