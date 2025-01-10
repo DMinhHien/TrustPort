@@ -1,4 +1,3 @@
-
 import { Box, Grid, Typography, Link, IconButton } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
@@ -8,8 +7,10 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: '#243447', // Màu nền
-        color: '#ffffff', // Màu chữ
+        width: '100%',
+        position: 'relative',
+        backgroundColor: '#243447',
+        color: '#ffffff',
         padding: '40px 20px',
         fontSize: '14px',
       }}
