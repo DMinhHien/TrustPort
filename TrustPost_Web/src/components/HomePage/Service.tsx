@@ -14,6 +14,8 @@ import delivery from "../../assets/delivery.png";
 
 // Components cho từng tab
 import Tracuu from '../Service/TraCuu';  // Giao diện tra cứu vận đơn
+import Uoctinh from "../Service/UocTinh";
+import Cauhoi from "../Service/CauHoiThuongGap";
 
 const Container = styled(Box)({
   display: "flex",
@@ -52,13 +54,9 @@ const Service = () => {
       case 0:
         return <Tracuu />;
       case 1:
-        return <Tracuu />;
+        return <Uoctinh />;
       case 2:
-        return <Tracuu />;
-      case 3:
-        return <Tracuu />;
-      case 4:
-        return <Tracuu />;
+        return <Cauhoi />;
       default:
         return <Tracuu />;
     }
@@ -76,9 +74,7 @@ const Service = () => {
         >
           <Tab label="Tra cứu vận đơn" />
           <Tab label="Ước tính cước phí" />
-          <Tab label="Tìm kiếm bưu cục" />
           <Tab label="Câu hỏi FAQ" />
-          <Tab label="Đăng ký đại lý" />
         </Tabs>
       </TabContainer>
 

@@ -2,7 +2,8 @@
 import { AppBar, Toolbar, Typography, Box, InputBase, Button, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
-
+import NotificationsIcon from '@mui/icons-material/Notifications'; // Biểu tượng thông báo
+import PeopleIcon from '@mui/icons-material/People'; // Biểu tượng người dùng
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -51,21 +52,16 @@ const Header = () => {
             />
           </Box>
 
-          {/* Nút đăng ký / đăng nhập */}
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: '#4f4f4f',
-              color: 'white',
-              textTransform: 'none',
-              borderRadius: '20px',
-              padding: '5px 15px',
-              '&:hover': { backgroundColor: '#3b3b3b' },
-            }}
-            onClick={() => navigate('/signin')}
-          >
-            ĐĂNG KÝ / ĐĂNG NHẬP
-          </Button>
+         {/* Biểu tượng thông báo */}
+         <IconButton sx={{ color: 'white' }}>
+            <NotificationsIcon />
+          </IconButton>
+
+          {/* Biểu tượng người dùng */}
+          <IconButton sx={{ color: 'white' }}>
+            <PeopleIcon />
+          </IconButton>
+          
 
           {/* Icon ngôn ngữ */}
           <IconButton>
