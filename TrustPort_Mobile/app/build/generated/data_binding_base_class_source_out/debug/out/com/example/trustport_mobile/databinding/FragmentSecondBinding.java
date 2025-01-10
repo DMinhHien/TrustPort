@@ -4,15 +4,14 @@ package com.example.trustport_mobile.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.trustport_mobile.R;
@@ -25,19 +24,10 @@ public final class FragmentSecondBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout childFragmentContainer;
-
-  @NonNull
-  public final RadioButton groupFood;
-
-  @NonNull
-  public final RadioGroup groupFoodPlace;
-
-  @NonNull
-  public final RadioButton groupPlace;
-
-  @NonNull
   public final Toolbar groupToolbar;
+
+  @NonNull
+  public final RecyclerView orderList;
 
   @NonNull
   public final Spinner spinnerDate;
@@ -48,20 +38,24 @@ public final class FragmentSecondBinding implements ViewBinding {
   @NonNull
   public final Spinner spinnerStatus;
 
-  private FragmentSecondBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FrameLayout childFragmentContainer, @NonNull RadioButton groupFood,
-      @NonNull RadioGroup groupFoodPlace, @NonNull RadioButton groupPlace,
-      @NonNull Toolbar groupToolbar, @NonNull Spinner spinnerDate,
-      @NonNull LinearLayout spinnerGroup, @NonNull Spinner spinnerStatus) {
+  @NonNull
+  public final TextView textOrder;
+
+  @NonNull
+  public final TextView tvTitle;
+
+  private FragmentSecondBinding(@NonNull ConstraintLayout rootView, @NonNull Toolbar groupToolbar,
+      @NonNull RecyclerView orderList, @NonNull Spinner spinnerDate,
+      @NonNull LinearLayout spinnerGroup, @NonNull Spinner spinnerStatus,
+      @NonNull TextView textOrder, @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.childFragmentContainer = childFragmentContainer;
-    this.groupFood = groupFood;
-    this.groupFoodPlace = groupFoodPlace;
-    this.groupPlace = groupPlace;
     this.groupToolbar = groupToolbar;
+    this.orderList = orderList;
     this.spinnerDate = spinnerDate;
     this.spinnerGroup = spinnerGroup;
     this.spinnerStatus = spinnerStatus;
+    this.textOrder = textOrder;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -91,33 +85,15 @@ public final class FragmentSecondBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.child_fragment_container;
-      FrameLayout childFragmentContainer = ViewBindings.findChildViewById(rootView, id);
-      if (childFragmentContainer == null) {
-        break missingId;
-      }
-
-      id = R.id.group_food;
-      RadioButton groupFood = ViewBindings.findChildViewById(rootView, id);
-      if (groupFood == null) {
-        break missingId;
-      }
-
-      id = R.id.group_food_place;
-      RadioGroup groupFoodPlace = ViewBindings.findChildViewById(rootView, id);
-      if (groupFoodPlace == null) {
-        break missingId;
-      }
-
-      id = R.id.group_place;
-      RadioButton groupPlace = ViewBindings.findChildViewById(rootView, id);
-      if (groupPlace == null) {
-        break missingId;
-      }
-
       id = R.id.group_toolbar;
       Toolbar groupToolbar = ViewBindings.findChildViewById(rootView, id);
       if (groupToolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.order_list;
+      RecyclerView orderList = ViewBindings.findChildViewById(rootView, id);
+      if (orderList == null) {
         break missingId;
       }
 
@@ -139,9 +115,20 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSecondBinding((ConstraintLayout) rootView, childFragmentContainer,
-          groupFood, groupFoodPlace, groupPlace, groupToolbar, spinnerDate, spinnerGroup,
-          spinnerStatus);
+      id = R.id.text_order;
+      TextView textOrder = ViewBindings.findChildViewById(rootView, id);
+      if (textOrder == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new FragmentSecondBinding((ConstraintLayout) rootView, groupToolbar, orderList,
+          spinnerDate, spinnerGroup, spinnerStatus, textOrder, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

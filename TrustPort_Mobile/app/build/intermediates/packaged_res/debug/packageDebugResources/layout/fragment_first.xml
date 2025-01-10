@@ -25,37 +25,41 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     style="@style/TEXT"
-                    android:layout_margin="10dp"
+                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:iconifiedByDefault="false"
                     android:queryHint="Search here"
                     android:searchIcon="@android:drawable/ic_menu_search"
-                    android:layout_gravity="top" />
+                    android:layout_gravity="center" />
             </FrameLayout>
         </androidx.appcompat.widget.Toolbar>
         <!-- Group of Items -->
         <LinearLayout
-            android:id="@+id/group"
             android:layout_width="match_parent"
             android:layout_height="84dp"
+            android:id="@+id/group"
             android:layout_marginTop="50dp"
-            android:orientation="horizontal"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:orientation="horizontal">
 
             <!-- Item 1 -->
             <LinearLayout
                 android:id="@+id/btnTraCuu"
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="84dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+
+                <!-- Vòng tròn nền -->
+                <!-- Icon -->
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:layout_gravity="center"
                     android:src="@drawable/box_search"
                     android:contentDescription="Latest Icon" />
+                <!-- Text -->
                 <TextView
                     android:layout_width="54dp"
                     android:layout_height="34dp"
@@ -69,16 +73,19 @@
             <!-- Item 2 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="84dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:layout_gravity="center"
                     android:src="@drawable/baseline_house_24"
                     android:contentDescription="Category Icon" />
+
+
                 <TextView
                     android:layout_width="44dp"
                     android:layout_height="34dp"
@@ -92,10 +99,11 @@
             <!-- Item 3 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="84dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
@@ -111,19 +119,29 @@
                     android:textSize="12sp"
                     android:textColor="@color/black" />
             </LinearLayout>
-
             <!-- Item 4 -->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:id="@+id/group2"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="84dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <FrameLayout
                     android:layout_width="42dp"
                     android:layout_height="42dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/background_cycle_grey">
+                    android:layout_gravity="center">
+
                     <ImageView
                         android:layout_width="31dp"
                         android:layout_height="34dp"
@@ -131,27 +149,60 @@
                         android:contentDescription="HCM Icon"
                         android:src="@drawable/product_icon" />
                 </FrameLayout>
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="18dp"
+                    android:layout_width="54dp"
+                    android:layout_height="34dp"
                     android:layout_marginTop="4dp"
-                    android:text="Tạo đơn hàng"
+                    android:gravity="center"
+                    android:text="Tư vấn đơn hàng"
                     android:textSize="12sp"
                     android:textColor="@color/black" />
             </LinearLayout>
-
             <!-- Item 5 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="84dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/baseline_saved_search_24"
+                        android:layout_gravity="center"
+                        android:contentDescription="HCM Icon" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="44dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="Tra tính ước phí"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
                 <FrameLayout
                     android:layout_width="42dp"
                     android:layout_height="42dp"
                     android:layout_gravity="center"
                     android:background="@drawable/background_cycle_grey">
+
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
@@ -159,6 +210,7 @@
                         android:layout_gravity="center"
                         android:contentDescription="HCM Icon" />
                 </FrameLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="18dp"
@@ -179,7 +231,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/container_image"
+                android:src="@drawable/img"
                 android:contentDescription="Main Image" />
             <View
                 android:layout_width="180dp"

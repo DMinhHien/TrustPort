@@ -1488,6 +1488,7 @@ color green
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -3084,6 +3085,7 @@ drawable baseline_mark_unread_chat_alt_24
 drawable baseline_menu_book_24
 drawable baseline_more_horiz_24
 drawable baseline_notifications_24
+drawable baseline_saved_search_24
 drawable baseline_security_24
 drawable baseline_settings_applications_24
 drawable box_search
@@ -3138,6 +3140,7 @@ drawable ic_signup
 drawable ic_success
 drawable icon_info
 drawable icon_tinit_color
+drawable img
 drawable indeterminate_static
 drawable intro_photo_final
 drawable logo
@@ -3223,6 +3226,7 @@ drawable rounded_circle
 drawable searchbar_background
 drawable spinner_background
 drawable status_background
+drawable status_yellow_background
 drawable test_level_drawable
 drawable tiktok_icon
 drawable tooltip_frame_dark
@@ -3368,7 +3372,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id child_fragment_container
 id child_recycler_view
 id chronometer
 id circle_center
@@ -3482,10 +3485,8 @@ id gone
 id graph
 id graph_wrap
 id group
+id group2
 id group_divider
-id group_food
-id group_food_place
-id group_place
 id group_toolbar
 id grouping
 id groups
@@ -3645,6 +3646,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id order_list
 id orders
 id outline
 id outward

@@ -1,90 +1,90 @@
 [
     {
-        "merged": "com.example.trustport_mobile.app-mergeDebugResources-3:/layout/fragment_first.xml",
-        "source": "com.example.trustport_mobile.app-main-6:/layout/fragment_first.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\order_item.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\order_item.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_signup.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_signup.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_chitiethanghoa.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_chitiethanghoa.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\receipt_detail_item.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\receipt_detail_item.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\notification_item.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\notification_item.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_third.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_third.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_suadiachinhanhang.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_suadiachinhanhang.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_third.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_third.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\edit_user.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\edit_user.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_search_order.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_search_order.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_login.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_login.xml"
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-42:/layout/activity_login.xml",
+        "source": "com.example.trustport_mobile.app-main-45:/layout/activity_login.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_search_order.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_search_order.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_second.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_main.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\receipt_detail_item.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\receipt_detail_item.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\order_item.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\order_item.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_quenmk.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_quenmk.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\item_setting_row.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\item_setting_row.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_second_child.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_second_child.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_second.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_notification.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_notification.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_location.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_location.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\item_setting_row.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\item_setting_row.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_taodonhang.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_taodonhang.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\edit_user.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\edit_user.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\notification_item.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\notification_item.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_suadiachinhanhang.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_suadiachinhanhang.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_second_child.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_second_child.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_saved.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_saved.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\activity_chitiethanghoa.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\activity_chitiethanghoa.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_quenmk.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_quenmk.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_cart.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_cart.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_first.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_first.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_first.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_location.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_location.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_saved.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_saved.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_taodonhang.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_taodonhang.xml"
     },
     {
-        "merged": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-3:\\layout\\fragment_notification.xml",
-        "source": "D:\\android_package\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-6:\\layout\\fragment_notification.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_cart.xml",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_cart.xml"
     }
 ]

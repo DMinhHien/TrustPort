@@ -35,6 +35,9 @@ public final class FragmentFirstBinding implements ViewBinding {
   public final LinearLayout group;
 
   @NonNull
+  public final LinearLayout group2;
+
+  @NonNull
   public final SearchView searchView;
 
   @NonNull
@@ -42,12 +45,14 @@ public final class FragmentFirstBinding implements ViewBinding {
 
   private FragmentFirstBinding(@NonNull NestedScrollView rootView, @NonNull FrameLayout bannerFrame,
       @NonNull LinearLayout btnTraCuu, @NonNull LinearLayout footer, @NonNull LinearLayout group,
-      @NonNull SearchView searchView, @NonNull Toolbar toolbarFirstFragment) {
+      @NonNull LinearLayout group2, @NonNull SearchView searchView,
+      @NonNull Toolbar toolbarFirstFragment) {
     this.rootView = rootView;
     this.bannerFrame = bannerFrame;
     this.btnTraCuu = btnTraCuu;
     this.footer = footer;
     this.group = group;
+    this.group2 = group2;
     this.searchView = searchView;
     this.toolbarFirstFragment = toolbarFirstFragment;
   }
@@ -103,6 +108,12 @@ public final class FragmentFirstBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.group2;
+      LinearLayout group2 = ViewBindings.findChildViewById(rootView, id);
+      if (group2 == null) {
+        break missingId;
+      }
+
       id = R.id.searchView;
       SearchView searchView = ViewBindings.findChildViewById(rootView, id);
       if (searchView == null) {
@@ -116,7 +127,7 @@ public final class FragmentFirstBinding implements ViewBinding {
       }
 
       return new FragmentFirstBinding((NestedScrollView) rootView, bannerFrame, btnTraCuu, footer,
-          group, searchView, toolbarFirstFragment);
+          group, group2, searchView, toolbarFirstFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

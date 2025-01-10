@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:padding="16dp">
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,17 +10,31 @@
         android:orientation="vertical">
 
         <!-- Header Section -->
-        <TextView
+        <android.widget.Toolbar
+            android:id="@+id/group_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#3399FF"
-            android:gravity="center"
-            android:padding="8dp"
-            android:text="Chi tiết đơn hàng"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="77dp"
+            android:background="@color/blue">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:text="Các đơn nhận"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+        </android.widget.Toolbar>
         <!-- Mã đơn hàng -->
         <LinearLayout
             android:layout_width="match_parent"
