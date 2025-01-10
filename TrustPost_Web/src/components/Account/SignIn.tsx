@@ -57,7 +57,7 @@ const SignInPage: React.FC = () => {
 
         {/* Quên mật khẩu và Chuyển đến trang Đăng ký */}
         <Box sx={{ marginTop: 2 }}>
-          <Link href="#" variant="body2" underline="none">
+          <Link href="/forgotpass" variant="body2" underline="none">
             Quên mật khẩu?
           </Link>
           <Typography variant="body2" sx={{ marginTop: 1 }}>
