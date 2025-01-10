@@ -12,6 +12,18 @@ export interface Order {
     estimatedDeliveryDate: string;
     liststatus: OrderStatus[]
   }
+  const sampleOrderStatus2: OrderStatus[] = [
+    {
+    id: 1,
+    statusType: 'Giao Hàng',
+    recipient: 'Nguyễn Văn A',
+    deliveryPerson: 'Trần Thị B',
+    timestamp: '2025-01-10 15:00',
+    recipientAddress: '123 Đường ABC',
+    postOfficeAddress: 'Bưu cục Hà Nội',
+    itemReceiver: 'Nguyễn Văn C'
+    },
+];
 
   const orders: Order[] = [
     {
@@ -20,7 +32,7 @@ export interface Order {
       recipientAddress: '456 Đường X, Quận Y, Hà Nội',
       weight: 2.5,
       service: 'Chuyển phát nhanh',
-      status: 'Đang giao',
+      status: 'Giao Thành Công',
       createdDate: '2025-01-05',
       receivedDate: '2025-01-06',
       estimatedDeliveryDate: '2025-01-10',
@@ -36,7 +48,7 @@ export interface Order {
         createdDate: '2025-01-05',
         receivedDate: '2025-01-06',
         estimatedDeliveryDate: '2025-01-10',
-        liststatus: sampleOrderStatus
+        liststatus: sampleOrderStatus2
       },
 ];
 

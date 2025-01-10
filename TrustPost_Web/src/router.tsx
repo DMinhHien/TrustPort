@@ -8,6 +8,7 @@ import OrderList from "./components/Order/OrderList";
 import OrderDetailPage from "./components/Order/OrderDetailPage";
 import NotificationPage from "./components/Notification/NotificationPage";
 import ProfilePage from "./pages/ProfilePage";
+import ChangeAddressReceipt from "./components/Profile/ChangeAddressReceipt";
 const router = createBrowserRouter ([
     {
         path: "/signin",
@@ -44,6 +45,10 @@ const router = createBrowserRouter ([
     {
         path: "/profile",
         element: <ProfilePage/>
+    },
+    {
+        path: "/changeaddress",
+        element: <ChangeAddressReceipt/>
     }
 ]);
 
