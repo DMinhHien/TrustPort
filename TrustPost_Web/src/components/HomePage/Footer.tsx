@@ -2,6 +2,8 @@ import { Box, Grid, Typography, Link, IconButton } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
 
 const Footer = () => {
   return (
@@ -111,10 +113,13 @@ const Footer = () => {
                 <FacebookIcon />
               </IconButton>
               <IconButton color="inherit">
+                <YouTubeIcon />
+              </IconButton>
+              <IconButton color="inherit">
                 <EmailIcon />
               </IconButton>
               <IconButton color="inherit">
-                <LinkedInIcon />
+                <YouTubeIcon />
               </IconButton>
             </Box>
           </Box>

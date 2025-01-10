@@ -1,7 +1,12 @@
 import React from 'react';
 import { Box, TextField, Button, Typography, Link, Paper } from '@mui/material';
 
+import { useNavigate } from 'react-router-dom';
+
 const SignInPage: React.FC = () => {
+
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -51,6 +56,7 @@ const SignInPage: React.FC = () => {
           variant="contained"
           color="primary"
           sx={{ marginTop: 2 }}
+          onClick={() => navigate('/')}
         >
           Đăng Nhập
         </Button>

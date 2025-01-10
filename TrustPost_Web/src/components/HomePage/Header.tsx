@@ -3,7 +3,12 @@ import { AppBar, Toolbar, Typography, Box, InputBase, Button, IconButton } from 
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
 
+import { useNavigate } from 'react-router-dom';
+
 const Header = () => {
+
+  const navigate = useNavigate();
+
   return (
     <AppBar position="static" sx={{ backgroundColor: '#007bff', padding: '8px 0' }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -57,6 +62,7 @@ const Header = () => {
               padding: '5px 15px',
               '&:hover': { backgroundColor: '#3b3b3b' },
             }}
+            onClick={() => navigate('/signin')}
           >
             ĐĂNG KÝ / ĐĂNG NHẬP
           </Button>
