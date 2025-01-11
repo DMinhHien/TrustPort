@@ -56,16 +56,16 @@
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\radio_location.xml"
     },
     {
-        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_language_24.xml.flat",
-        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_language_24.xml"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_logo.jpg.flat",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\logo.jpg"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_ic_success.png.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\ic_success.png"
     },
     {
-        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_logo.jpg.flat",
-        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\logo.jpg"
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_language_24.xml.flat",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_language_24.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_calculate_24.xml.flat",
@@ -152,12 +152,12 @@
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\icon_info.png"
     },
     {
-        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_searchbar_background.xml.flat",
-        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\searchbar_background.xml"
-    },
-    {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_status_background.xml.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\status_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_searchbar_background.xml.flat",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\searchbar_background.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_icon_tinit_color.xml.flat",
@@ -200,12 +200,12 @@
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_bookmark_24_black.xml.flat",
-        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_bookmark_24_black.xml"
-    },
-    {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_more_horiz_24.xml.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_more_horiz_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_bookmark_24_black.xml.flat",
+        "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_bookmark_24_black.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_attach_money_24.xml.flat",
@@ -214,6 +214,10 @@
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-debug-43:/drawable_status_background.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-45:/drawable/status_background.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_gradient_button.xml.flat",
@@ -296,10 +300,6 @@
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\status_yellow_background.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-debug-43:/layout_activity_login.xml.flat",
-        "source": "com.example.trustport_mobile.app-main-45:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -318,6 +318,10 @@
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-debug-43:/drawable_status_yellow_background.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-45:/drawable/status_yellow_background.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\layout_activity_taodonhang.xml.flat",
@@ -402,5 +406,9 @@
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-debug-43:\\drawable_baseline_contact_phone_24.xml.flat",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\drawable\\baseline_contact_phone_24.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-debug-43:/layout_order_item.xml.flat",
+        "source": "com.example.trustport_mobile.app-main-45:/layout/order_item.xml"
     }
 ]

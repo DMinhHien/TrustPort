@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
             android:layout_marginTop="20dp"
-            android:text="Cài đặt"
+            android:text="Chình sửa thông tin"
             android:layout_marginEnd="10dp"
             android:textColor="@android:color/white"
             android:textSize="18sp"

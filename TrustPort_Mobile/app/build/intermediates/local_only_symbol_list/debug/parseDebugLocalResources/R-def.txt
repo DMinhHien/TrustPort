@@ -8,7 +8,6 @@ color colorPrimary
 color gray
 color green
 color grey
-color ic_launcher_background
 color light_gray
 color orange
 color purple_200

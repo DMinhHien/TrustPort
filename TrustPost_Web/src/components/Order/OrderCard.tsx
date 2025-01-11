@@ -11,7 +11,7 @@ const OrderCard: React.FC<OrderCardProps> = ({ order }) => {
     const navigate = useNavigate();
 
     const handleCardClick = () => {
-        navigate(`/changeaddress`);
+        navigate(`/orderdetail`);
     };
       
     const getColorForStatus = (status: string): string => {
@@ -26,10 +26,11 @@ const OrderCard: React.FC<OrderCardProps> = ({ order }) => {
     const handleChangeAddress = () => {
         // Logic để thay đổi địa chỉ (ví dụ mở modal hoặc chuyển hướng tới trang chỉnh sửa)
         console.log('Đổi địa chỉ nhận hàng');
+        navigate(`/changeaddress`);
     };
 
     return (
-        <Card sx={{ width: '100%', margin: 2 }} onClick={handleCardClick}>
+        <Card sx={{ width: '100%', margin: 2 }} >
             <CardContent>
                 {/* Mã đơn hàng */}
                 <Typography variant="h6" color="text.secondary" align="left">
@@ -70,7 +71,7 @@ const OrderCard: React.FC<OrderCardProps> = ({ order }) => {
                 {/* Các nút hành động */}
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: 2 }}>
                     <Button variant="outlined" size="small">Gọi CSKH</Button>
-                    <Button variant="outlined" size="small">Hành trình</Button>
+                    <Button variant="outlined" size="small" onClick={handleCardClick}>Hành trình</Button>
                     <Button variant="outlined" size="small">...</Button>
 
                     {/* Nút đổi địa chỉ chỉ hiển thị nếu trạng thái không phải là 'giao thành công' */}

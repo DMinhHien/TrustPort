@@ -24,10 +24,6 @@
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_search_order.xml"
     },
     {
-        "merged": "com.example.trustport_mobile.app-mergeDebugResources-42:/layout/activity_login.xml",
-        "source": "com.example.trustport_mobile.app-main-45:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_second.xml",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\fragment_second.xml"
     },
@@ -82,6 +78,10 @@
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\activity_taodonhang.xml",
         "source": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-main-45:\\layout\\activity_taodonhang.xml"
+    },
+    {
+        "merged": "com.example.trustport_mobile.app-mergeDebugResources-42:/layout/order_item.xml",
+        "source": "com.example.trustport_mobile.app-main-45:/layout/order_item.xml"
     },
     {
         "merged": "C:\\Users\\duong\\.gradle\\daemon\\8.4\\com.example.trustport_mobile.app-mergeDebugResources-42:\\layout\\fragment_cart.xml",

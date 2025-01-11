@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,12 +21,20 @@ public final class ActivityChitiethanghoaBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
+  public final Toolbar groupToolbar;
+
+  @NonNull
   public final TextView textChangeAddress;
 
-  private ActivityChitiethanghoaBinding(@NonNull ScrollView rootView,
-      @NonNull TextView textChangeAddress) {
+  @NonNull
+  public final TextView tvTitle;
+
+  private ActivityChitiethanghoaBinding(@NonNull ScrollView rootView, @NonNull Toolbar groupToolbar,
+      @NonNull TextView textChangeAddress, @NonNull TextView tvTitle) {
     this.rootView = rootView;
+    this.groupToolbar = groupToolbar;
     this.textChangeAddress = textChangeAddress;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -55,13 +64,26 @@ public final class ActivityChitiethanghoaBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.group_toolbar;
+      Toolbar groupToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (groupToolbar == null) {
+        break missingId;
+      }
+
       id = R.id.text_change_address;
       TextView textChangeAddress = ViewBindings.findChildViewById(rootView, id);
       if (textChangeAddress == null) {
         break missingId;
       }
 
-      return new ActivityChitiethanghoaBinding((ScrollView) rootView, textChangeAddress);
+      id = R.id.tv_title;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityChitiethanghoaBinding((ScrollView) rootView, groupToolbar,
+          textChangeAddress, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
